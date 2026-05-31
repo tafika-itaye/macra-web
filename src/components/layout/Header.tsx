@@ -17,6 +17,7 @@ export default function Header() {
               width={200}
               height={60}
               priority
+              sizes="200px"
             />
           </Link>
         </div>
