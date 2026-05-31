@@ -2,7 +2,9 @@
 
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
+import type Fuse from "fuse.js"
 import { bp } from "@/lib/basePath"
+import type { SearchEntry } from "@/data/searchIndex"
 
 const quickLinks = [
   {
@@ -58,19 +60,23 @@ export default function NotFound() {
   const [query, setQuery] = useState("")
   const [results, setResults] = useState<{ title: string; url: string; description: string }[]>([])
   const [fuseReady, setFuseReady] = useState(false)
-  const fuseRef = useRef<InstanceType<typeof import("fuse.js").default> | null>(null)
-  const inputRef = useRef<HTMLInputElement>(null)
+  const fuseRef = useRef<Fuse<SearchEntry> | null>(null)
 
   useEffect(() => {
-    import("fuse.js").then((mod) => {
-      import("@/data/searchIndex").then((idx) => {
-        fuseRef.current = new mod.default(idx.searchIndex, {
-          keys: ["title", "description", "keywords"],
-          threshold: 0.35,
-          includeScore: true,
-        })
-        setFuseReady(true)
+    Promise.all([
+      import("fuse.js"),
+      import("@/data/searchIndex"),
+    ]).then(([mod, idx]) => {
+      const FuseClass = mod.default as new (
+        list: SearchEntry[],
+        options: Fuse.IFuseOptions<SearchEntry>
+      ) => Fuse<SearchEntry>
+      fuseRef.current = new FuseClass(idx.searchIndex, {
+        keys: ["title", "description", "keywords"],
+        threshold: 0.35,
+        includeScore: true,
       })
+      setFuseReady(true)
     })
   }, [])
 
@@ -84,7 +90,6 @@ export default function NotFound() {
   return (
     <main className="min-h-screen bg-[#F5F5F5]">
 
-      {/* Hero band */}
       <div className="bg-[#E30613] text-white py-16 px-4 text-center">
         <div className="max-w-2xl mx-auto">
           <div className="text-8xl font-black tracking-tighter leading-none mb-4 opacity-20 select-none">
@@ -97,10 +102,8 @@ export default function NotFound() {
             The page you are looking for may have moved or no longer exists.
           </p>
 
-          {/* Search */}
           <div className="relative max-w-lg mx-auto">
             <input
-              ref={inputRef}
               type="search"
               placeholder="Search MACRA..."
               value={query}
@@ -118,7 +121,6 @@ export default function NotFound() {
             </svg>
           </div>
 
-          {/* Search results */}
           {results.length > 0 && (
             <ul className="mt-3 max-w-lg mx-auto bg-white rounded-xl overflow-hidden shadow-lg text-left">
               {results.map((r) => (
@@ -141,7 +143,6 @@ export default function NotFound() {
         </div>
       </div>
 
-      {/* Quick nav grid */}
       <div className="max-w-5xl mx-auto px-4 py-12">
         <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-6">
           Or go directly to
@@ -171,7 +172,6 @@ export default function NotFound() {
           ))}
         </div>
 
-        {/* Home CTA */}
         <div className="mt-10 flex items-center gap-4">
           <Link
             href={bp("/")}
