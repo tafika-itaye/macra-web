@@ -1,7 +1,8 @@
-"use client";
+﻿"use client";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { navigation, NavItem, NavChild } from "@/data/navigation";
+import SearchBox from "@/components/ui/SearchBox";
 
 function MobileNavItem({ item, onClose }: { item: NavItem; onClose: () => void }) {
   const [open, setOpen] = useState(false);
@@ -218,7 +219,9 @@ export default function Nav() {
             )
           )}
         </ul>
-
+        <div className="hidden md:block py-3">
+          <SearchBox />
+        </div>
         <button
           className="md:hidden py-4 px-1 text-[#003087] focus:outline-none focus-visible:underline"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -234,7 +237,6 @@ export default function Nav() {
           </svg>
         </button>
       </div>
-
       {mobileOpen && (
         <div
           id="mobile-menu"
@@ -243,6 +245,9 @@ export default function Nav() {
           aria-modal="true"
           aria-label="Navigation menu"
         >
+          <div className="px-4 py-3 border-b border-gray-100">
+            <SearchBox onClose={() => setMobileOpen(false)} />
+          </div>
           <ul>
             {navigation.map((item) => (
               <MobileNavItem key={item.href} item={item} onClose={() => setMobileOpen(false)} />
@@ -253,3 +258,4 @@ export default function Nav() {
     </nav>
   );
 }
+
