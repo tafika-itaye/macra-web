@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Topbar from "./Topbar";
 import Nav from "./Nav";
+import { bp } from "@/lib/basePath";
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4">
           <Link href="/" aria-label="MACRA home">
             <Image
-              src="/images/macra-logo.png"
+              src={bp("/images/macra-logo.png")}
               alt="MACRA - Malawi Communications Regulatory Authority"
               width={200}
               height={60}

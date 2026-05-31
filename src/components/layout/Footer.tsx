@@ -1,6 +1,7 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 import { contactInfo } from "@/data/contact";
+import { bp } from "@/lib/basePath";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -9,7 +10,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <Image
-            src="/images/macra-logo.png"
+            src={bp("/images/macra-logo.png")}
             alt="MACRA"
             width={140}
             height={42}
@@ -52,7 +53,7 @@ export default function Footer() {
           </ul>
           <div className="mt-4 flex gap-3 flex-wrap">
             {contactInfo.social.map((s) => (
-              <a
+              
                 key={s.label}
                 href={s.href}
                 target="_blank"
@@ -70,7 +71,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 text-xs text-blue-200 flex flex-col sm:flex-row justify-between gap-2">
           <p>All Rights Reserved. Copyright {year} MACRA.</p>
           <p>
-            <a
+            
               href={contactInfo.address.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
