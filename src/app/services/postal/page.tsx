@@ -3,19 +3,68 @@ import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Postal and Courier Services",
+  title: "Postal and Courier | MACRA",
+  description:
+    "MACRA regulates postal and courier services in Malawi including licensing, quality of service, and the national addressing project.",
 };
 
-export default function Page() {
+const areas = [
+  {
+    title: "Licensing",
+    body: "MACRA licences postal and courier operators in Malawi. Operators must hold a valid licence to provide domestic or international mail and parcel delivery services.",
+  },
+  {
+    title: "Quality of Service",
+    body: "MACRA sets and monitors quality of service standards for licensed postal and courier operators to ensure timely and reliable delivery for consumers and businesses.",
+  },
+  {
+    title: "National Addressing Project",
+    body: "MACRA is implementing a national addressing project to assign standardised addresses and postcodes across Malawi, improving delivery accuracy and supporting e-commerce and emergency services.",
+  },
+  {
+    title: "Post Codes",
+    body: "As part of the national addressing project, MACRA has introduced a postcode system for Malawi. Blantyre Chichiri carries postcode 312225.",
+  },
+  {
+    title: "E-Commerce",
+    body: "MACRA is working to develop the postal sector as a key enabler of digital commerce in Malawi, supporting last-mile delivery and electronic tracking solutions.",
+  },
+];
+
+export default function PostalPage() {
   return (
-    <>
-      <PageHeader title="Postal and Courier Services" />
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <Breadcrumb items={[{ label: "Postal and Courier" }]} />
-        <p className="mt-8 text-gray-400 italic text-sm">
-          Content pending. Populate from macra.mw and update the relevant data file in src/data/.
-        </p>
+    <main>
+      <PageHeader title="Postal and Courier" />
+      <div className="max-w-7xl mx-auto px-4 py-4">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Services", href: "/services/telecommunications" },
+            { label: "Postal and Courier" },
+          ]}
+        />
       </div>
-    </>
+      <section className="max-w-7xl mx-auto px-4 py-10">
+        <p className="text-gray-600 mb-10">
+          MACRA regulates postal and courier services in Malawi under the
+          Communications Act. The Postal Directorate oversees operator
+          licensing, quality of service, the national addressing project, and
+          the development of e-commerce infrastructure.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {areas.map((area) => (
+            <div
+              key={area.title}
+              className="bg-white border border-gray-100 rounded-lg p-6 shadow-sm"
+            >
+              <h3 className="text-lg font-semibold text-[#003087] mb-2">
+                {area.title}
+              </h3>
+              <p className="text-gray-600 text-sm">{area.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }

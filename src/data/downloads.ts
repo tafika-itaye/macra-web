@@ -1,27 +1,27 @@
-﻿export type Download = {
+﻿export interface Download {
   title: string;
-  filename: string;
   category: string;
-  date?: string;
-};
+  filename: string;
+}
 
 export const featuredDownloads: Download[] = [
-  {
-    title: "Type Approved Equipment List March 2026",
-    filename: "type-approved-equipment-list-march-2026.pdf",
-    category: "Type Approval",
-    date: "2026-03",
-  },
-  {
-    title: "Press Statement - Content Licensees Compliance",
-    filename: "press-statement-content-licensees-compliance.pdf",
-    category: "Press Releases",
-    date: "2026",
-  },
-  {
-    title: "National ICT Innovation Awards",
-    filename: "national-ict-innovation-awards.pdf",
-    category: "Events",
-    date: "2026",
-  },
+  { title: "Annual Report 2024", category: "Annual Reports", filename: "annual-report-2024.pdf" },
+  { title: "Telecommunications Tariff Schedule", category: "Tariffs", filename: "tariff-telecoms.pdf" },
+  { title: "Broadcasting Tariff Schedule", category: "Tariffs", filename: "tariff-broadcasting.pdf" },
+  { title: "Postal and Courier Tariff Schedule", category: "Tariffs", filename: "tariff-postal.pdf" },
+  { title: "Consumer Complaint Form", category: "Consumer Protection", filename: "consumer-complaint-form.pdf" },
+  { title: "Telecommunications Licence Application", category: "Application Forms", filename: "licence-application-telecoms.pdf" },
+  { title: "Broadcasting Licence Application", category: "Application Forms", filename: "licence-application-broadcasting.pdf" },
+  { title: "Postal and Courier Licence Application", category: "Application Forms", filename: "licence-application-postal.pdf" },
+];
+
+export const annualReports: Download[] = [
+  { title: "Annual Report 2024", category: "Annual Reports", filename: "annual-report-2024.pdf" },
+];
+
+export const applicationForms: Download[] = [
+  { title: "Telecommunications Licence Application", category: "Application Forms", filename: "licence-application-telecoms.pdf" },
+  { title: "Broadcasting Licence Application", category: "Application Forms", filename: "licence-application-broadcasting.pdf" },
+  { title: "Postal and Courier Licence Application", category: "Application Forms", filename: "licence-application-postal.pdf" },
+  { title: "Consumer Complaint Form", category: "Consumer Protection", filename: "consumer-complaint-form.pdf" },
 ];

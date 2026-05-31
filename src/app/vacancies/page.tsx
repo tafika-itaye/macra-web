@@ -3,21 +3,36 @@ import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Vacancies",
-  description: "Current job vacancies at MACRA - Malawi Communications Regulatory Authority.",
+  title: "Vacancies | MACRA",
+  description:
+    "View current job vacancies at the Malawi Communications Regulatory Authority.",
 };
 
 export default function VacanciesPage() {
   return (
-    <>
-      <PageHeader title="Vacancies" subtitle="Careers at MACRA" />
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <Breadcrumb items={[{ label: "Vacancies" }]} />
-        <p className="mt-8 text-gray-700 text-sm">
-          There are no open vacancies at this time. Check back regularly or follow us on social
-          media for announcements.
-        </p>
+    <main>
+      <PageHeader title="Vacancies" />
+      <div className="max-w-7xl mx-auto px-4 py-4">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Vacancies" },
+          ]}
+        />
       </div>
-    </>
+      <section className="max-w-7xl mx-auto px-4 py-10">
+        <p className="text-gray-600 mb-6">
+          MACRA periodically advertises positions across its directorates and
+          departments. All vacancies are advertised in the national press and on
+          this website. Only shortlisted candidates are contacted.
+        </p>
+        <div className="bg-gray-50 border border-gray-200 rounded-lg p-8 text-center">
+          <p className="text-gray-500 text-sm">
+            There are no open vacancies at this time. Please check back later
+            or follow MACRA on social media for updates.
+          </p>
+        </div>
+      </section>
+    </main>
   );
 }
