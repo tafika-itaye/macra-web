@@ -1,0 +1,6 @@
+﻿asset_type,filename,source_url,local_path,notes
+logo,macra-logo.png,https://macra.mw/wp-content/uploads/2024/03/cropped-png-logo-1-270x270.png,public/images/macra-logo.png,Download manually
+favicon,favicon.ico,https://macra.mw/wp-content/uploads/2024/03/cropped-png-logo-1-270x270.png,public/favicon.ico,Derive from logo
+pdf,type-approved-equipment-list-march-2026.pdf,https://macra.mw/download/44/home-page/253605/type-approved-equipment-list-march-2026-2.pdf,public/downloads/type-approved-equipment-list-march-2026.pdf,Download manually
+pdf,press-statement-content-licensees-compliance.pdf,https://macra.mw/download/44/home-page/253515/press-statement-content-licensees-compliance-2.pdf,public/downloads/press-statement-content-licensees-compliance.pdf,Download manually
+pdf,national-ict-innovation-awards.pdf,https://macra.mw/download/44/home-page/253539/national-ict-innovation-awards-3.pdf,public/downloads/national-ict-innovation-awards.pdf,Download manually

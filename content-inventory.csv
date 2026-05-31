@@ -1,0 +1,37 @@
+﻿page_title,url_slug,status,content_verified,notes
+Home,/,migrate,yes,Hero slider not reproduced - static hero section used
+Organisation,/about-us/organisation,migrate,yes,Mandate from Communications Act 2016 verified
+Board of Directors,/about-us/board-of-directors,stub,no,Page not fetched - placeholder only
+Management,/about-us/management,migrate,yes,Six members verified from meta
+Executive Directorate,/about-us/directorates/executive,stub,no,Not fetched
+Admin and HR Directorate,/about-us/directorates/admin-hr,stub,no,Not fetched
+Broadcasting Directorate,/about-us/directorates/broadcasting,stub,no,Not fetched
+Finance Directorate,/about-us/directorates/finance,stub,no,Not fetched
+Legal Services Directorate,/about-us/directorates/legal-services,stub,no,Not fetched
+Postal Directorate,/about-us/directorates/postal,stub,no,Not fetched
+Telecommunications Directorate,/about-us/directorates/telecommunications,stub,no,Not fetched
+Telecom Licensing,/services/telecommunications/licensing,stub,no,Not fetched
+Telecom QoS,/services/telecommunications/qos,stub,no,Not fetched
+Type Approval,/services/telecommunications/type-approval,stub,no,Not fetched
+Spectrum,/services/telecommunications/spectrum,stub,no,Content exists in junk modal only - do not use verbatim
+Numbering,/services/telecommunications/numbering,stub,no,Not fetched
+Fault Handling Regulations,/services/telecommunications/fault-handling,stub,no,Not fetched
+Broadcasting Licensing,/services/broadcasting/licensing,stub,no,Not fetched
+Broadcasting QoS,/services/broadcasting/qos,stub,no,Not fetched
+Broadcasting Frequencies,/services/broadcasting/frequencies,stub,no,Not fetched
+Postal Licensing,/services/postal/licensing,stub,no,Not fetched
+Postal Licensees,/services/postal/licensees,stub,no,Not fetched
+Postal QoS,/services/postal/qos,stub,no,Not fetched
+National Addressing Project,/services/postal/national-addressing,stub,no,Not fetched
+Post Codes,/services/postal/post-codes,stub,no,Not fetched
+Consumer Affairs,/consumer-protection/consumer-affairs,stub,no,Not fetched
+Rights and Obligations,/consumer-protection/rights-obligations,stub,no,Not fetched
+Consumer Complaints,/consumer-protection/consumer-complaints,stub,no,Not fetched
+Service Charter,/macra-and-community/service-charter,stub,no,Not fetched
+Social Enterprise Responsibility,/macra-and-community/social-enterprise-responsibility,stub,no,Not fetched
+Projects,/macra-and-community/projects,stub,no,Not fetched
+News,/media/news,migrate,yes,One seed article verified
+Annual Reports,/media/annual-reports,stub,no,Not fetched
+Application Forms,/media/application-forms,stub,no,Not fetched
+Vacancies,/vacancies,stub,no,Not fetched
+Contact,/contact,partial,yes,Address phone email verified - contact form not fetched
