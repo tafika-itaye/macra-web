@@ -9,13 +9,7 @@ export default function Footer() {
     <footer className="bg-[#003087] text-white mt-16">
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <Image
-            src={bp("/images/macra-logo.png")}
-            alt="MACRA"
-            width={140}
-            height={42}
-            className="mb-4 brightness-0 invert"
-          />
+          <Image src={bp("/images/macra-logo.png")} alt="MACRA" width={140} height={42} className="mb-4 brightness-0 invert" />
           <p className="text-sm text-blue-200">Malawi Communications Regulatory Authority</p>
         </div>
         <div>
@@ -43,14 +37,7 @@ export default function Footer() {
           </ul>
           <div className="mt-4 flex gap-3 flex-wrap">
             {contactInfo.social.map((s) => (
-              
-                key={s.label}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={"MACRA on " + s.label}
-                className="text-xs text-blue-200 hover:text-white"
-              >
+              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={"MACRA on " + s.label} className="text-xs text-blue-200 hover:text-white">
                 {s.label}
               </a>
             ))}
@@ -60,11 +47,7 @@ export default function Footer() {
       <div className="border-t border-blue-800 py-4">
         <div className="max-w-7xl mx-auto px-4 text-xs text-blue-200 flex flex-col sm:flex-row justify-between gap-2">
           <p>All Rights Reserved. Copyright {year} MACRA.</p>
-          <p>
-            <a href={contactInfo.address.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white">
-              Find us on Google Maps
-            </a>
-          </p>
+          <p><a href={contactInfo.address.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white">Find us on Google Maps</a></p>
         </div>
       </div>
     </footer>
