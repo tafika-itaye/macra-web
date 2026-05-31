@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "next build && gh-pages -d out"
+    "deploy": "next build && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "next": "16.2.6",
@@ -15,7 +15,7 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.3.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
