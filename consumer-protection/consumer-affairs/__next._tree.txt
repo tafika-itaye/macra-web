@@ -1,2 +1,2 @@
 :HL["/macra-web/_next/static/chunks/009l0.83nm5.p.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"consumer-protection","param":null,"prefetchHints":0,"slots":{"children":{"name":"consumer-affairs","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"smBFQ6InqfByexHRqXrjQ"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"consumer-protection","param":null,"prefetchHints":0,"slots":{"children":{"name":"consumer-affairs","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"RAm4_56hYw1KwkK5WWg6t"}
