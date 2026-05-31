@@ -59,7 +59,7 @@ const quickLinks = [
 
 export default function NotFound() {
   const [query, setQuery] = useState("")
-  const [results, setResults] = useState<{ title: string; url: string; description: string }[]>([])
+  const [results, setResults] = useState<{ title: string; path: string; description: string }[]>([])
   const [fuseReady, setFuseReady] = useState(false)
   const fuseRef = useRef<Fuse<SearchEntry> | null>(null)
 
@@ -85,7 +85,7 @@ export default function NotFound() {
     if (!fuseReady || !fuseRef.current) return
     if (query.trim().length < 2) { setResults([]); return }
     const raw = fuseRef.current.search(query.trim())
-    setResults(raw.slice(0, 6).map((r) => ({ title: r.item.title, url: r.item.url, description: r.item.description })))
+    setResults(raw.slice(0, 6).map((r) => ({ title: r.item.title, path: r.item.path, description: r.item.description })))
   }, [query, fuseReady])
 
   return (
@@ -125,9 +125,9 @@ export default function NotFound() {
           {results.length > 0 && (
             <ul className="mt-3 max-w-lg mx-auto bg-white rounded-xl overflow-hidden shadow-lg text-left">
               {results.map((r) => (
-                <li key={r.url} className="border-b border-gray-100 last:border-0">
+                <li key={r.path} className="border-b border-gray-100 last:border-0">
                   <Link
-                    href={bp(r.url)}
+                    href={bp(r.path)}
                     className="flex flex-col px-5 py-3 hover:bg-red-50 transition-colors"
                   >
                     <span className="text-[#E30613] font-semibold text-sm">{r.title}</span>
