@@ -1,2 +1,2 @@
-:HL["/macra-web/_next/static/chunks/0ukrh9g0ldvyb.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"services","param":null,"prefetchHints":0,"slots":{"children":{"name":"telecommunications","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"Wpn8q-QR5c4w2X7bWHO57"}
+:HL["/macra-web/_next/static/chunks/0ah3ovzav4w67.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"services","param":null,"prefetchHints":0,"slots":{"children":{"name":"telecommunications","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"bldQCK9dnU3hEYEzMdLMz"}
