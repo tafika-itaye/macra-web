@@ -1,5 +1,6 @@
 ﻿import { NewsItem } from "@/data/news";
 import Link from "next/link";
+import { bp } from "@/lib/basePath";
 
 export default function NewsCard({ item }: { item: NewsItem }) {
   const date = new Date(item.date).toLocaleDateString("en-GB", {

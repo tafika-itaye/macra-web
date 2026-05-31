@@ -2,6 +2,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { newsItems } from "@/data/news";
+import { bp } from "@/lib/basePath";
 
 export default function Hero() {
   const [active, setActive] = useState(0);

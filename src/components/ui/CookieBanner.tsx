@@ -1,6 +1,7 @@
 ﻿"use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { bp } from "@/lib/basePath";
 
 const STORAGE_KEY = "macra-cookie-consent";
 
