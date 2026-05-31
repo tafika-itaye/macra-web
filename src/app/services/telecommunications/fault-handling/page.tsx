@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "Fault Handling Regulations | MACRA",
@@ -11,6 +13,7 @@ export default function FaultHandlingPage() {
   return (
     <main>
       <PageHeader title="Fault Handling Regulations" />
+      <JsonLd data={webPageSchema("Fault Handling", "MACRA telecommunications fault handling procedures, escalation timelines, and consumer remedies.", "/services/telecommunications/fault-handling")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services/telecommunications" }, { label: "Telecommunications", href: "/services/telecommunications" }, { label: "Fault Handling Regulations" }]} />
       </div>

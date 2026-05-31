@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "Broadcasting Frequencies | MACRA",
@@ -11,6 +13,7 @@ export default function BroadcastingFrequenciesPage() {
   return (
     <main>
       <PageHeader title="Broadcasting Frequencies" />
+      <JsonLd data={webPageSchema("Broadcasting Frequencies", "MACRA frequency planning and allocation for broadcasting services in Malawi.", "/services/broadcasting/frequencies")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services/broadcasting" }, { label: "Broadcasting", href: "/services/broadcasting" }, { label: "Broadcasting Frequencies" }]} />
       </div>

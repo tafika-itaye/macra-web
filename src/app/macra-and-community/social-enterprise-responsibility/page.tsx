@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 import Image from "next/image";
 import { bp } from "@/lib/basePath";
 
@@ -13,6 +15,7 @@ export default function SERPage() {
   return (
     <main>
       <PageHeader title="Social Enterprise Responsibility" />
+      <JsonLd data={webPageSchema("Social Enterprise Responsibility", "MACRA corporate social responsibility initiatives supporting communities and digital inclusion in Malawi.", "/macra-and-community/social-enterprise-responsibility")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "MACRA and Community", href: "/macra-and-community" }, { label: "Social Enterprise Responsibility" }]} />
       </div>

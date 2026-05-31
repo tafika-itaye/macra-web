@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 import Image from "next/image";
 import { bp } from "@/lib/basePath";
 
@@ -19,6 +21,7 @@ export default function USFConsultationsPage() {
   return (
     <main>
       <PageHeader title="USF Stakeholder Consultations" />
+      <JsonLd data={webPageSchema("USF Consultations", "Universal Service Fund public consultations and stakeholder submission opportunities managed by MACRA.", "/quick-links/usf-consultations")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Quick Links", href: "#" }, { label: "USF Stakeholder Consultations" }]} />
       </div>

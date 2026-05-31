@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "Type Approval | MACRA",
@@ -11,6 +13,7 @@ export default function TypeApprovalPage() {
   return (
     <main>
       <PageHeader title="Type Approval" />
+      <JsonLd data={webPageSchema("Type Approval", "MACRA type approval process for communications equipment and terminal devices sold or used in Malawi.", "/services/telecommunications/type-approval")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services/telecommunications" }, { label: "Telecommunications", href: "/services/telecommunications" }, { label: "Type Approval" }]} />
       </div>

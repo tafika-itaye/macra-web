@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 import Image from "next/image";
 import { bp } from "@/lib/basePath";
 
@@ -21,6 +23,7 @@ export default function ProjectsPage() {
   return (
     <main>
       <PageHeader title="Projects" />
+      <JsonLd data={webPageSchema("Projects", "MACRA infrastructure and community development projects advancing digital transformation in Malawi.", "/macra-and-community/projects")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "MACRA and Community", href: "/macra-and-community" }, { label: "Projects" }]} />
       </div>

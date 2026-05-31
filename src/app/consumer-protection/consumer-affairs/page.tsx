@@ -1,6 +1,8 @@
 ﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "Consumer Affairs | MACRA",
@@ -12,6 +14,7 @@ export default function ConsumerAffairsPage() {
   return (
     <main>
       <PageHeader title="Consumer Affairs" />
+      <JsonLd data={webPageSchema("Consumer Affairs", "MACRA consumer affairs programmes protect the interests of communications consumers throughout Malawi.", "/consumer-protection/consumer-affairs")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Consumer Protection", href: "/consumer-protection/consumer-affairs" }, { label: "Consumer Affairs" }]} />
       </div>

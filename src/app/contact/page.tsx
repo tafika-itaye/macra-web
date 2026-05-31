@@ -1,6 +1,8 @@
 ﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 import { contactInfo } from "@/data/contact";
 
 export const metadata: Metadata = {
@@ -13,6 +15,7 @@ export default function ContactPage() {
   return (
     <>
       <PageHeader title="Contact Us" subtitle="Enquiries and Feedback" />
+      <JsonLd data={webPageSchema("Contact MACRA", "Contact MACRA by phone, email or visit our offices at Snr Chief Kapeni Campus, Blantyre, Malawi.", "/contact")} />
       <div className="max-w-7xl mx-auto px-4 py-8">
         <Breadcrumb items={[{ label: "Contact" }]} />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-8">

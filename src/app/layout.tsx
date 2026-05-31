@@ -2,6 +2,8 @@
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import JsonLd from "@/components/ui/JsonLd";
+import { organizationSchema, webSiteSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: {
@@ -10,11 +12,27 @@ export const metadata: Metadata = {
   },
   description:
     "MACRA regulates and monitors the provision of communications services in Malawi, ensuring reliable and affordable services throughout the country.",
-  metadataBase: new URL("https://macra.mw"),
+  metadataBase: new URL("https://tafika-itaye.github.io"),
   openGraph: {
     siteName: "MACRA - Malawi Communications Regulatory Authority",
     locale: "en_US",
     type: "website",
+    url: "https://tafika-itaye.github.io/macra-web",
+    images: [
+      {
+        url: "/macra-web/images/macra-logo.png",
+        width: 200,
+        height: 60,
+        alt: "MACRA - Malawi Communications Regulatory Authority",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "MACRA - Malawi Communications Regulatory Authority",
+    description:
+      "MACRA regulates and monitors the provision of communications services in Malawi.",
+    images: ["/macra-web/images/macra-logo.png"],
   },
   robots: {
     index: true,
@@ -40,6 +58,8 @@ export default function RootLayout({
         <meta httpEquiv="X-Frame-Options" content="SAMEORIGIN" />
         <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
         <meta httpEquiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), interest-cohort=()" />
+        <JsonLd data={organizationSchema()} />
+        <JsonLd data={webSiteSchema()} />
       </head>
       <body>
         <a

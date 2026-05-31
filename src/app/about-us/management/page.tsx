@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 import { managementMembers } from "@/data/management";
 import { bp } from "@/lib/basePath";
 
@@ -14,6 +16,7 @@ export default function ManagementPage() {
   return (
     <main>
       <PageHeader title="Management" />
+      <JsonLd data={webPageSchema("Management", "MACRA senior management team including the Director General and directorate heads responsible for day-to-day operations.", "/about-us/management")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[
           { label: "Home", href: "/" },

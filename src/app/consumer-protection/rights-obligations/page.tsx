@@ -1,6 +1,8 @@
 ﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "Consumer Rights and Obligations | MACRA",
@@ -54,6 +56,7 @@ export default function RightsObligationsPage() {
   return (
     <main>
       <PageHeader title="Consumer Rights and Obligations" />
+      <JsonLd data={webPageSchema("Rights and Obligations", "Understand your rights and obligations as a communications consumer under Malawi communications law.", "/consumer-protection/rights-obligations")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb
           items={[

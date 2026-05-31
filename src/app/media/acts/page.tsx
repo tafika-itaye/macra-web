@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 import Image from "next/image";
 import { bp } from "@/lib/basePath";
 
@@ -20,6 +22,7 @@ export default function ActsPage() {
   return (
     <main>
       <PageHeader title="Acts" />
+      <JsonLd data={webPageSchema("Acts", "Communications-related Acts of Parliament governing the regulatory framework in Malawi.", "/media/acts")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Media", href: "/media/news" }, { label: "Acts" }]} />
       </div>

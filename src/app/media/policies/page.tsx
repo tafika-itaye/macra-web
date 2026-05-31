@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 import Image from "next/image";
 import { bp } from "@/lib/basePath";
 
@@ -21,6 +23,7 @@ export default function PoliciesPage() {
   return (
     <main>
       <PageHeader title="Policies" />
+      <JsonLd data={webPageSchema("Policies", "National communications policies and MACRA policy documents guiding sector regulation.", "/media/policies")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Media", href: "/media/news" }, { label: "Policies" }]} />
       </div>

@@ -1,6 +1,8 @@
 ﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "Vacancies | MACRA",
@@ -12,6 +14,7 @@ export default function VacanciesPage() {
   return (
     <main>
       <PageHeader title="Vacancies" />
+      <JsonLd data={webPageSchema("Vacancies", "Current job vacancies and career opportunities at the Malawi Communications Regulatory Authority.", "/vacancies")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb
           items={[

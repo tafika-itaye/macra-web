@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 import Image from "next/image";
 import { bp } from "@/lib/basePath";
 
@@ -13,6 +15,7 @@ export default function BroadcastingDirectoratePage() {
   return (
     <main>
       <PageHeader title="Broadcasting" />
+      <JsonLd data={webPageSchema("Broadcasting Directorate", "The Broadcasting Directorate regulates and monitors broadcasting services including radio and television in Malawi.", "/about-us/directorates/broadcasting")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "About Us", href: "/about-us/organisation" }, { label: "Directorates", href: "#" }, { label: "Broadcasting" }]} />
       </div>

@@ -1,6 +1,8 @@
 ﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 import DownloadTable from "@/components/ui/DownloadTable";
 import { applicationForms } from "@/data/downloads";
 
@@ -13,6 +15,7 @@ export default function ApplicationFormsPage() {
   return (
     <main>
       <PageHeader title="Application Forms" />
+      <JsonLd data={webPageSchema("Application Forms", "Download licence application forms and regulatory submission forms from MACRA.", "/media/application-forms")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Media", href: "/media/news" }, { label: "Application Forms" }]} />
       </div>

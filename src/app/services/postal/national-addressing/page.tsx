@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "National Addressing Project | MACRA",
@@ -11,6 +13,7 @@ export default function NationalAddressingPage() {
   return (
     <main>
       <PageHeader title="National Addressing Project" />
+      <JsonLd data={webPageSchema("National Addressing System", "The Malawi National Addressing System assigns unique addresses to every household and premises in the country.", "/services/postal/national-addressing")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services/postal" }, { label: "Postal and Courier", href: "/services/postal" }, { label: "National Addressing Project" }]} />
       </div>

@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 import Image from "next/image";
 import { bp } from "@/lib/basePath";
 
@@ -22,6 +24,7 @@ export default function TelecomsLicensingPage() {
   return (
     <main>
       <PageHeader title="Telecommunications Licensing" />
+      <JsonLd data={webPageSchema("Telecommunications Licensing", "How to apply for a telecommunications licence from MACRA including service categories and application requirements.", "/services/telecommunications/licensing")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services/telecommunications" }, { label: "Telecommunications", href: "/services/telecommunications" }, { label: "Licensing" }]} />
       </div>

@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 import { bp } from "@/lib/basePath";
 
 export const metadata: Metadata = {
@@ -24,6 +26,7 @@ export default function BoardOfDirectorsPage() {
   return (
     <main>
       <PageHeader title="Board of Directors" />
+      <JsonLd data={webPageSchema("Board of Directors", "Meet the MACRA Board of Directors, including the Board Chair and board members who provide strategic oversight of the authority.", "/about-us/board-of-directors")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[
           { label: "Home", href: "/" },

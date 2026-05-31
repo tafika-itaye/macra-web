@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "Numbering | MACRA",
@@ -11,6 +13,7 @@ export default function NumberingPage() {
   return (
     <main>
       <PageHeader title="Numbering" />
+      <JsonLd data={webPageSchema("Numbering", "MACRA national numbering plan administration and telephone number allocation in Malawi.", "/services/telecommunications/numbering")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services/telecommunications" }, { label: "Telecommunications", href: "/services/telecommunications" }, { label: "Numbering" }]} />
       </div>

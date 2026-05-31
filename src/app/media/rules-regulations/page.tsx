@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "Rules and Regulations | MACRA",
@@ -23,6 +25,7 @@ export default function RulesRegulationsPage() {
   return (
     <main>
       <PageHeader title="Rules and Regulations" />
+      <JsonLd data={webPageSchema("Rules and Regulations", "MACRA rules and subsidiary regulatory instruments made under the Communications Act.", "/media/rules-regulations")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Media", href: "/media/news" }, { label: "Rules and Regulations" }]} />
       </div>

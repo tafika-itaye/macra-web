@@ -1,6 +1,8 @@
 ﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "MACRA and Community | MACRA",
@@ -35,6 +37,7 @@ export default function MacraAndCommunityPage() {
   return (
     <main>
       <PageHeader title="MACRA and Community" />
+      <JsonLd data={webPageSchema("MACRA and Community", "MACRA community engagement programmes, digital inclusion projects, and outreach activities across Malawi.", "/macra-and-community")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb
           items={[

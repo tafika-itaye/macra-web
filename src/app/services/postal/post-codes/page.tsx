@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "Post Codes | MACRA",
@@ -20,6 +22,7 @@ export default function PostCodesPage() {
   return (
     <main>
       <PageHeader title="Post Codes" />
+      <JsonLd data={webPageSchema("Post Codes", "Malawi post codes directory and the national postal code system administered by MACRA.", "/services/postal/post-codes")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services/postal" }, { label: "Postal and Courier", href: "/services/postal" }, { label: "Post Codes" }]} />
       </div>

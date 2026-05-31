@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
   title: "Postal Quality of Service | MACRA",
@@ -11,6 +13,7 @@ export default function PostalQoSPage() {
   return (
     <main>
       <PageHeader title="Postal Quality of Service" />
+      <JsonLd data={webPageSchema("Postal Quality of Service", "MACRA postal quality of service standards and performance monitoring for licensed postal operators.", "/services/postal/qos")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services/postal" }, { label: "Postal and Courier", href: "/services/postal" }, { label: "Quality of Service" }]} />
       </div>

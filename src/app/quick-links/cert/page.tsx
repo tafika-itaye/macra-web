@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import JsonLd from "@/components/ui/JsonLd";
+import { webPageSchema } from "@/lib/jsonLd";
 import Image from "next/image";
 import { bp } from "@/lib/basePath";
 
@@ -13,6 +15,7 @@ export default function CERTPage() {
   return (
     <main>
       <PageHeader title="Malawi CERT" />
+      <JsonLd data={webPageSchema("CERT", "The Malawi Computer Emergency Response Team coordinates cybersecurity incident response and digital security awareness.", "/quick-links/cert")} />
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Quick Links", href: "#" }, { label: "Malawi CERT" }]} />
       </div>
