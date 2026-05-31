@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import type Fuse from "fuse.js"
+import type { IFuseOptions } from "fuse.js"
 import { bp } from "@/lib/basePath"
 import type { SearchEntry } from "@/data/searchIndex"
 
@@ -69,7 +70,7 @@ export default function NotFound() {
     ]).then(([mod, idx]) => {
       const FuseClass = mod.default as new (
         list: SearchEntry[],
-        options: Fuse.IFuseOptions<SearchEntry>
+        options: IFuseOptions<SearchEntry>
       ) => Fuse<SearchEntry>
       fuseRef.current = new FuseClass(idx.searchIndex, {
         keys: ["title", "description", "keywords"],
