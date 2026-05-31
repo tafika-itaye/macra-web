@@ -3,6 +3,7 @@ import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import JsonLd from "@/components/ui/JsonLd";
 import { webPageSchema } from "@/lib/jsonLd";
+import { bp } from "@/lib/basePath"
 
 export const metadata: Metadata = {
   title: "Fault Handling Regulations | MACRA",
@@ -29,7 +30,7 @@ export default function FaultHandlingPage() {
           <li className="flex gap-2"><span className="text-[#C8A84B] font-bold">-</span>Submit monthly fault statistics reports to MACRA</li>
           <li className="flex gap-2"><span className="text-[#C8A84B] font-bold">-</span>Compensate customers where service disruptions exceed regulated thresholds</li>
         </ul>
-        <p className="text-sm text-gray-600 leading-relaxed">Customers whose faults are not resolved within the required timeframes may escalate complaints to MACRA. Contact MACRA at <a href="mailto:dg@macra.mw" className="text-[#E30613] underline hover:text-[#C8A84B]">dg@macra.mw</a> or visit the <a href="/consumer-protection/consumer-complaints" className="text-[#E30613] underline hover:text-[#C8A84B]">Consumer Complaints</a> page.</p>
+        <p className="text-sm text-gray-600 leading-relaxed">Customers whose faults are not resolved within the required timeframes may escalate complaints to MACRA. Contact MACRA at <a href="mailto:dg@macra.mw" className="text-[#E30613] underline hover:text-[#C8A84B]">dg@macra.mw</a> or visit the <a href={bp("/consumer-protection/consumer-complaints")} className="text-[#E30613] underline hover:text-[#C8A84B]">Consumer Complaints</a> page.</p>
       </section>
     </main>
   );

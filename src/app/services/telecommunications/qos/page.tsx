@@ -3,6 +3,7 @@ import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import JsonLd from "@/components/ui/JsonLd";
 import { webPageSchema } from "@/lib/jsonLd";
+import { bp } from "@/lib/basePath"
 
 export const metadata: Metadata = {
   title: "Quality of Service - Telecommunications | MACRA",
@@ -49,7 +50,7 @@ export default function TelecomsQoSPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-gray-500 mt-4">QoS monitoring reports are published quarterly. View reports on the <a href="/media/qos-reports" className="text-[#E30613] underline hover:text-[#C8A84B]">QoS Reports</a> page.</p>
+        <p className="text-sm text-gray-500 mt-4">QoS monitoring reports are published quarterly. View reports on the <a href={bp("/media/qos-reports")} className="text-[#E30613] underline hover:text-[#C8A84B]">QoS Reports</a> page.</p>
       </section>
     </main>
   );

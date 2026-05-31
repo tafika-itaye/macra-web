@@ -1,5 +1,6 @@
 ﻿import { contactInfo } from "@/data/contact";
 import Link from "next/link";
+import { bp } from "@/lib/basePath"
 
 export default function Topbar() {
   return (
@@ -12,7 +13,7 @@ export default function Topbar() {
           <a href={`mailto:${contactInfo.emailDG}`} className="hover:text-[#C8A84B]">
             {contactInfo.emailDG}
           </a>
-          <Link href="/media/application-forms" className="hover:text-[#C8A84B]">
+          <Link href={bp("/media/application-forms")} className="hover:text-[#C8A84B]">
             Downloads
           </Link>
         </div>

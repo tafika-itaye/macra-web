@@ -3,6 +3,7 @@ import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import JsonLd from "@/components/ui/JsonLd";
 import { webPageSchema } from "@/lib/jsonLd";
+import { bp } from "@/lib/basePath"
 
 export const metadata: Metadata = {
   title: "Type Approval | MACRA",
@@ -32,7 +33,7 @@ export default function TypeApprovalPage() {
         </ul>
         <h3 className="text-base font-semibold text-[#E30613] mb-3">Application Process</h3>
         <p className="text-sm text-gray-600 leading-relaxed mb-4">Submit a type approval application to MACRA with the equipment technical specifications, test reports from an accredited laboratory, and the prescribed application fee. MACRA will review the application and issue a type approval certificate for equipment that meets the required standards.</p>
-        <p className="text-sm text-gray-500">For application forms visit the <a href="/media/application-forms" className="text-[#E30613] underline hover:text-[#C8A84B]">Application Forms</a> page or contact MACRA at <a href="mailto:dg@macra.mw" className="text-[#E30613] underline hover:text-[#C8A84B]">dg@macra.mw</a>.</p>
+        <p className="text-sm text-gray-500">For application forms visit the <a href={bp("/media/application-forms")} className="text-[#E30613] underline hover:text-[#C8A84B]">Application Forms</a> page or contact MACRA at <a href="mailto:dg@macra.mw" className="text-[#E30613] underline hover:text-[#C8A84B]">dg@macra.mw</a>.</p>
       </section>
     </main>
   );

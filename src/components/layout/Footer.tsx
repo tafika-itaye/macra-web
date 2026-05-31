@@ -110,15 +110,15 @@ export default function Footer() {
           <div>
             <h2 className="font-semibold text-[#C8A84B] mb-4 uppercase text-xs tracking-widest">Quick Links</h2>
             <ul className="text-sm text-blue-100 space-y-2">
-              <li><Link href="/about-us/organisation" className="hover:text-white">About MACRA</Link></li>
-              <li><Link href="/consumer-protection/consumer-complaints" className="hover:text-white">Submit a Complaint</Link></li>
-              <li><Link href="/media/application-forms" className="hover:text-white">Application Forms</Link></li>
-              <li><Link href="/media/annual-reports" className="hover:text-white">Annual Reports</Link></li>
-              <li><Link href="/media/news" className="hover:text-white">News</Link></li>
-              <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
-              <li><Link href="/vacancies" className="hover:text-white">Vacancies</Link></li>
-              <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-              <li><Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
+              <li><Link href={bp("/about-us/organisation")} className="hover:text-white">About MACRA</Link></li>
+              <li><Link href={bp("/consumer-protection/consumer-complaints")} className="hover:text-white">Submit a Complaint</Link></li>
+              <li><Link href={bp("/media/application-forms")} className="hover:text-white">Application Forms</Link></li>
+              <li><Link href={bp("/media/annual-reports")} className="hover:text-white">Annual Reports</Link></li>
+              <li><Link href={bp("/media/news")} className="hover:text-white">News</Link></li>
+              <li><Link href={bp("/faq")} className="hover:text-white">FAQ</Link></li>
+              <li><Link href={bp("/vacancies")} className="hover:text-white">Vacancies</Link></li>
+              <li><Link href={bp("/contact")} className="hover:text-white">Contact</Link></li>
+              <li><Link href={bp("/privacy-policy")} className="hover:text-white">Privacy Policy</Link></li>
             </ul>
           </div>
 
@@ -126,14 +126,14 @@ export default function Footer() {
           <div>
             <h2 className="font-semibold text-[#C8A84B] mb-4 uppercase text-xs tracking-widest">Services</h2>
             <ul className="text-sm text-blue-100 space-y-2">
-              <li><Link href="/services/telecommunications" className="hover:text-white">Telecommunications</Link></li>
-              <li><Link href="/services/telecommunications/licensing" className="hover:text-white">Telecom Licensing</Link></li>
-              <li><Link href="/services/telecommunications/spectrum" className="hover:text-white">Spectrum Management</Link></li>
-              <li><Link href="/services/broadcasting" className="hover:text-white">Broadcasting</Link></li>
-              <li><Link href="/services/broadcasting/licensing" className="hover:text-white">Broadcasting Licensing</Link></li>
-              <li><Link href="/services/postal" className="hover:text-white">Postal Services</Link></li>
-              <li><Link href="/services/postal/national-addressing" className="hover:text-white">National Addressing</Link></li>
-              <li><Link href="/quick-links/cert" className="hover:text-white">CERT</Link></li>
+              <li><Link href={bp("/services/telecommunications")} className="hover:text-white">Telecommunications</Link></li>
+              <li><Link href={bp("/services/telecommunications/licensing")} className="hover:text-white">Telecom Licensing</Link></li>
+              <li><Link href={bp("/services/telecommunications/spectrum")} className="hover:text-white">Spectrum Management</Link></li>
+              <li><Link href={bp("/services/broadcasting")} className="hover:text-white">Broadcasting</Link></li>
+              <li><Link href={bp("/services/broadcasting/licensing")} className="hover:text-white">Broadcasting Licensing</Link></li>
+              <li><Link href={bp("/services/postal")} className="hover:text-white">Postal Services</Link></li>
+              <li><Link href={bp("/services/postal/national-addressing")} className="hover:text-white">National Addressing</Link></li>
+              <li><Link href={bp("/quick-links/cert")} className="hover:text-white">CERT</Link></li>
             </ul>
           </div>
 

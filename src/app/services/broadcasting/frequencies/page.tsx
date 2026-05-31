@@ -3,6 +3,7 @@ import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import JsonLd from "@/components/ui/JsonLd";
 import { webPageSchema } from "@/lib/jsonLd";
+import { bp } from "@/lib/basePath"
 
 export const metadata: Metadata = {
   title: "Broadcasting Frequencies | MACRA",
@@ -37,7 +38,7 @@ export default function BroadcastingFrequenciesPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-gray-600 leading-relaxed">Frequency assignments are included in each broadcasting licence. Applications for new broadcasting licences should be submitted to MACRA using the forms on the <a href="/media/application-forms" className="text-[#E30613] underline hover:text-[#C8A84B]">Application Forms</a> page.</p>
+        <p className="text-sm text-gray-600 leading-relaxed">Frequency assignments are included in each broadcasting licence. Applications for new broadcasting licences should be submitted to MACRA using the forms on the <a href={bp("/media/application-forms")} className="text-[#E30613] underline hover:text-[#C8A84B]">Application Forms</a> page.</p>
       </section>
     </main>
   );

@@ -3,6 +3,7 @@ import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import JsonLd from "@/components/ui/JsonLd";
 import { webPageSchema } from "@/lib/jsonLd";
+import { bp } from "@/lib/basePath"
 
 export const metadata: Metadata = {
   title: "Consumer Complaints | MACRA",
@@ -37,7 +38,7 @@ export default function ConsumerComplaintsPage() {
           <p className="text-gray-600">Your complaint should include your full name and contact details, the name of the service provider, a clear description of the problem, the date the problem started, steps already taken to resolve the issue, and any supporting documents or correspondence.</p>
         </div>
         <div>
-          <a href="/downloads/consumer-complaint-form.pdf" className="inline-block bg-[#E30613] text-white px-6 py-3 rounded font-medium hover:bg-[#002060] transition-colors">Download Complaint Form</a>
+          <a href={bp("/downloads/consumer-complaint-form.pdf")} className="inline-block bg-[#E30613] text-white px-6 py-3 rounded font-medium hover:bg-[#002060] transition-colors">Download Complaint Form</a>
         </div>
       </section>
     </main>

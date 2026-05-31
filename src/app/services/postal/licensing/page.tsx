@@ -3,6 +3,7 @@ import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import JsonLd from "@/components/ui/JsonLd";
 import { webPageSchema } from "@/lib/jsonLd";
+import { bp } from "@/lib/basePath"
 
 export const metadata: Metadata = {
   title: "Postal and Courier Licensing | MACRA",
@@ -26,7 +27,7 @@ export default function PostalLicensingPage() {
           <div className="border border-gray-200 rounded-lg p-4"><h4 className="text-sm font-semibold text-[#E30613]">Express Mail Service Licence</h4><p className="text-sm text-gray-600 mt-1">For operators providing time-guaranteed express document and parcel delivery.</p></div>
           <div className="border border-gray-200 rounded-lg p-4"><h4 className="text-sm font-semibold text-[#E30613]">Postal Agency Licence</h4><p className="text-sm text-gray-600 mt-1">For retail agents providing postal services on behalf of licensed postal operators.</p></div>
         </div>
-        <p className="text-sm text-gray-500">Download the postal licence application form from the <a href="/media/application-forms" className="text-[#E30613] underline hover:text-[#C8A84B]">Application Forms</a> page.</p>
+        <p className="text-sm text-gray-500">Download the postal licence application form from the <a href={bp("/media/application-forms")} className="text-[#E30613] underline hover:text-[#C8A84B]">Application Forms</a> page.</p>
       </section>
     </main>
   );

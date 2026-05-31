@@ -44,7 +44,7 @@ export default function TelecomsLicensingPage() {
         </div>
         <div className="bg-[#E30613] text-white rounded-lg p-6">
           <h3 className="font-semibold mb-2">How to Apply</h3>
-          <p className="text-sm text-blue-100 leading-relaxed">Download the relevant application form from the <a href="/media/application-forms" className="underline hover:text-[#C8A84B]">Application Forms</a> page. Submit the completed form together with supporting documents and the prescribed application fee to MACRA. Contact us at <a href="mailto:dg@macra.mw" className="underline hover:text-[#C8A84B]">dg@macra.mw</a> for further guidance.</p>
+          <p className="text-sm text-blue-100 leading-relaxed">Download the relevant application form from the <a href={bp("/media/application-forms")} className="underline hover:text-[#C8A84B]">Application Forms</a> page. Submit the completed form together with supporting documents and the prescribed application fee to MACRA. Contact us at <a href="mailto:dg@macra.mw" className="underline hover:text-[#C8A84B]">dg@macra.mw</a> for further guidance.</p>
         </div>
       </section>
     </main>

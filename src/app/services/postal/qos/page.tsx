@@ -3,6 +3,7 @@ import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import JsonLd from "@/components/ui/JsonLd";
 import { webPageSchema } from "@/lib/jsonLd";
+import { bp } from "@/lib/basePath"
 
 export const metadata: Metadata = {
   title: "Postal Quality of Service | MACRA",
@@ -28,7 +29,7 @@ export default function PostalQoSPage() {
           <li className="flex gap-2"><span className="text-[#C8A84B] font-bold">-</span>Customer complaint resolution within 21 days</li>
           <li className="flex gap-2"><span className="text-[#C8A84B] font-bold">-</span>Loss and damage rate not exceeding 0.5% of items handled</li>
         </ul>
-        <p className="text-sm text-gray-500">Annual postal QoS monitoring reports are available on the <a href="/media/qos-reports" className="text-[#E30613] underline hover:text-[#C8A84B]">QoS Reports</a> page.</p>
+        <p className="text-sm text-gray-500">Annual postal QoS monitoring reports are available on the <a href={bp("/media/qos-reports")} className="text-[#E30613] underline hover:text-[#C8A84B]">QoS Reports</a> page.</p>
       </section>
     </main>
   );

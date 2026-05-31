@@ -3,6 +3,7 @@ import PageHeader from "@/components/sections/PageHeader";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import JsonLd from "@/components/ui/JsonLd";
 import { webPageSchema } from "@/lib/jsonLd";
+import { bp } from "@/lib/basePath"
 
 export const metadata: Metadata = {
   title: "Broadcasting Licensing | MACRA",
@@ -38,7 +39,7 @@ export default function BroadcastingLicensingPage() {
         </div>
         <div className="bg-[#E30613] text-white rounded-lg p-6">
           <h3 className="font-semibold mb-2">How to Apply</h3>
-          <p className="text-sm text-blue-100 leading-relaxed">Download the broadcasting licence application form from the <a href="/media/application-forms" className="underline hover:text-[#C8A84B]">Application Forms</a> page. Submit the completed form with supporting documents and the prescribed fee to MACRA.</p>
+          <p className="text-sm text-blue-100 leading-relaxed">Download the broadcasting licence application form from the <a href={bp("/media/application-forms")} className="underline hover:text-[#C8A84B]">Application Forms</a> page. Submit the completed form with supporting documents and the prescribed fee to MACRA.</p>
         </div>
       </section>
     </main>

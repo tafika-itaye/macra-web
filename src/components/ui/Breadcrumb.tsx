@@ -1,4 +1,5 @@
 ﻿import Link from "next/link";
+import { bp } from "@/lib/basePath"
 
 export type BreadcrumbItem = {
   label: string;
@@ -10,7 +11,7 @@ export default function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
     <nav aria-label="Breadcrumb" className="py-3 text-sm text-gray-500">
       <ol className="flex flex-wrap gap-1 items-center">
         <li>
-          <Link href="/" className="hover:text-[#E30613]">Home</Link>
+          <Link href={bp("/")} className="hover:text-[#E30613]">Home</Link>
         </li>
         {items.map((item, i) => (
           <li key={i} className="flex items-center gap-1">
