@@ -1,2 +1,2 @@
-:HL["/macra-web/_next/static/chunks/0qayuir2rxsq4.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"about-us","param":null,"prefetchHints":0,"slots":{"children":{"name":"directorates","param":null,"prefetchHints":0,"slots":{"children":{"name":"telecommunications","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"pYB6q5WMfPDO0yBP1XDPl"}
+:HL["/macra-web/_next/static/chunks/0jl7ylhxm1m_f.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"about-us","param":null,"prefetchHints":0,"slots":{"children":{"name":"directorates","param":null,"prefetchHints":0,"slots":{"children":{"name":"telecommunications","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"ywLcOq0ML-mzb7wc2pex5"}
