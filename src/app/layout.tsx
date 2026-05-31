@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import JsonLd from "@/components/ui/JsonLd";
+import CookieBanner from "@/components/ui/CookieBanner";
 import { organizationSchema, webSiteSchema } from "@/lib/jsonLd";
 
 export const metadata: Metadata = {
@@ -71,6 +72,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );

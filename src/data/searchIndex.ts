@@ -59,5 +59,6 @@ export const searchIndex: SearchEntry[] = [
   { title: "Fault Handling", description: "Telecommunications fault handling procedures and escalation", path: "/services/telecommunications/fault-handling", section: "Services" },
   { title: "CERT", description: "Malawi Computer Emergency Response Team - cybersecurity incident response", path: "/quick-links/cert", section: "Quick Links" },
   { title: "USF Consultations", description: "Universal Service Fund public consultations and submissions", path: "/quick-links/usf-consultations", section: "Quick Links" },
+  { title: "Privacy Policy", description: "MACRA privacy policy explaining how we collect, use, and protect personal information on this website.", path: "/privacy-policy", section: "General" },
 ];
 
