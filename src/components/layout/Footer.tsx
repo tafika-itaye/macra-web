@@ -16,9 +16,7 @@ export default function Footer() {
             height={42}
             className="mb-4 brightness-0 invert"
           />
-          <p className="text-sm text-blue-200">
-            Malawi Communications Regulatory Authority
-          </p>
+          <p className="text-sm text-blue-200">Malawi Communications Regulatory Authority</p>
         </div>
         <div>
           <h2 className="font-semibold text-[#C8A84B] mb-3">Contact</h2>
@@ -30,16 +28,8 @@ export default function Footer() {
             <p>Postcode: {contactInfo.address.postcode}</p>
           </address>
           <div className="mt-3 text-sm space-y-1">
-            <p>
-              <a href={contactInfo.phoneTel} className="hover:text-[#C8A84B]">
-                {contactInfo.phone}
-              </a>
-            </p>
-            <p>
-              <a href={`mailto:${contactInfo.emailDG}`} className="hover:text-[#C8A84B]">
-                {contactInfo.emailDG}
-              </a>
-            </p>
+            <p><a href={contactInfo.phoneTel} className="hover:text-[#C8A84B]">{contactInfo.phone}</a></p>
+            <p><a href={"mailto:" + contactInfo.emailDG} className="hover:text-[#C8A84B]">{contactInfo.emailDG}</a></p>
           </div>
         </div>
         <div>
@@ -58,7 +48,7 @@ export default function Footer() {
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`MACRA on ${s.label}`}
+                aria-label={"MACRA on " + s.label}
                 className="text-xs text-blue-200 hover:text-white"
               >
                 {s.label}
@@ -71,12 +61,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 text-xs text-blue-200 flex flex-col sm:flex-row justify-between gap-2">
           <p>All Rights Reserved. Copyright {year} MACRA.</p>
           <p>
-            
-              href={contactInfo.address.mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white"
-            >
+            <a href={contactInfo.address.mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white">
               Find us on Google Maps
             </a>
           </p>
