@@ -33,16 +33,16 @@ export default function TelecomsLicensingPage() {
           <Image src={bp("/images/services/services-licensing.jpg")} alt="Telecommunications licensing" fill sizes="(max-width: 768px) 100vw, 1200px" className="object-cover" loading="lazy" />
         </div>
         <p className="text-sm text-gray-600 leading-relaxed max-w-3xl mb-8">MACRA issues licences to telecommunications operators under the Communications Act. All operators providing telecommunications services in Malawi must hold a valid licence issued by MACRA. Applications must be submitted with the required documentation and applicable fees.</p>
-        <h2 className="text-lg font-bold text-[#003087] mb-4">Licence Categories</h2>
+        <h2 className="text-lg font-bold text-[#E30613] mb-4">Licence Categories</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           {licenceTypes.map((l) => (
             <div key={l.name} className="border border-gray-200 rounded-lg p-5">
-              <h3 className="text-sm font-semibold text-[#003087] mb-1">{l.name}</h3>
+              <h3 className="text-sm font-semibold text-[#E30613] mb-1">{l.name}</h3>
               <p className="text-sm text-gray-600">{l.description}</p>
             </div>
           ))}
         </div>
-        <div className="bg-[#003087] text-white rounded-lg p-6">
+        <div className="bg-[#E30613] text-white rounded-lg p-6">
           <h3 className="font-semibold mb-2">How to Apply</h3>
           <p className="text-sm text-blue-100 leading-relaxed">Download the relevant application form from the <a href="/media/application-forms" className="underline hover:text-[#C8A84B]">Application Forms</a> page. Submit the completed form together with supporting documents and the prescribed application fee to MACRA. Contact us at <a href="mailto:dg@macra.mw" className="underline hover:text-[#C8A84B]">dg@macra.mw</a> for further guidance.</p>
         </div>

@@ -27,12 +27,12 @@ export default function PostCodesPage() {
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services/postal" }, { label: "Postal and Courier", href: "/services/postal" }, { label: "Post Codes" }]} />
       </div>
       <section className="max-w-4xl mx-auto px-4 py-10">
-        <h2 className="text-xl font-bold text-[#003087] mb-4">Malawi Post Codes</h2>
+        <h2 className="text-xl font-bold text-[#E30613] mb-4">Malawi Post Codes</h2>
         <p className="text-sm text-gray-600 leading-relaxed mb-6">Malawi uses a 6-digit postcode system developed by MACRA under the National Addressing Project. Postcodes are assigned to all premises to facilitate accurate mail delivery and location identification.</p>
         <div className="overflow-x-auto">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="bg-[#003087] text-white">
+              <tr className="bg-[#E30613] text-white">
                 <th className="text-left px-4 py-3 font-medium">Zone</th>
                 <th className="text-left px-4 py-3 font-medium">Area</th>
                 <th className="text-left px-4 py-3 font-medium">Example Code</th>

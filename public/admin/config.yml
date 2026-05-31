@@ -1,0 +1,68 @@
+﻿backend:
+  name: github
+  repo: tafika-itaye/macra-web
+  branch: master
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+publish_mode: editorial_workflow
+
+media_folder: public/images/uploads
+public_folder: /macra-web/images/uploads
+
+collections:
+
+  - name: news
+    label: News
+    folder: src/data/cms/news
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime }
+      - label: Category
+        name: category
+        widget: select
+        options: [News, Events, International, Consumer Protection]
+      - { label: Summary, name: summary, widget: text }
+      - { label: Body, name: body, widget: markdown }
+      - { label: Featured Image, name: image, widget: image, required: false }
+
+  - name: vacancies
+    label: Vacancies
+    folder: src/data/cms/vacancies
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Closing Date, name: closing_date, widget: datetime }
+      - { label: Department, name: department, widget: string }
+      - { label: Description, name: body, widget: markdown }
+      - { label: Application Link, name: apply_url, widget: string, required: false }
+
+  - name: downloads
+    label: Downloads
+    folder: src/data/cms/downloads
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: Title, name: title, widget: string }
+      - label: Category
+        name: category
+        widget: select
+        options: [Annual Reports, Tariffs, Consumer Protection, Application Forms]
+      - { label: File, name: file, widget: file }
+      - { label: Date, name: date, widget: datetime }
+
+  - name: settings
+    label: Site Settings
+    files:
+      - label: Contact Details
+        name: contact
+        file: src/data/cms/settings/contact.json
+        fields:
+          - { label: Phone, name: phone, widget: string }
+          - { label: Email (public), name: email_public, widget: string }
+          - { label: Email (DG), name: email_dg, widget: string }
+          - { label: Physical Address, name: address, widget: text }
+          - { label: Google Maps URL, name: maps_url, widget: string }

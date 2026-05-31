@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
         <div className="max-w-3xl mt-6 space-y-8 text-gray-700 leading-relaxed">
 
           <section>
-            <h2 className="text-xl font-bold text-[#003087] mb-3">Introduction</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-3">Introduction</h2>
             <p>
               The Malawi Communications Regulatory Authority (MACRA) is committed to protecting the privacy
               and security of personal information. This privacy policy explains what information we collect
@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-[#003087] mb-3">Information We Collect</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-3">Information We Collect</h2>
             <p className="mb-3">
               When you visit this website we may collect the following categories of information:
             </p>
@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-[#003087] mb-3">Cookies</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-3">Cookies</h2>
             <p className="mb-3">
               This website uses only functional cookies necessary for the site to operate correctly. We do
               not use advertising cookies, tracking cookies, or third-party analytics cookies without your
@@ -78,7 +78,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-[#003087] mb-3">How We Use Your Information</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-3">How We Use Your Information</h2>
             <p className="mb-3">We use information collected through this website to:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Respond to enquiries and complaints submitted through the contact page.</li>
@@ -88,7 +88,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-[#003087] mb-3">Data Sharing</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-3">Data Sharing</h2>
             <p>
               MACRA does not sell, rent, or trade personal information to third parties. Information may be
               shared with government agencies where required by Malawi law or a court order.
@@ -96,7 +96,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-[#003087] mb-3">Data Retention</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-3">Data Retention</h2>
             <p>
               Contact form submissions are retained for as long as necessary to respond to your enquiry
               and for record-keeping purposes in accordance with MACRA records management policy. Usage
@@ -105,7 +105,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-[#003087] mb-3">Your Rights</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-3">Your Rights</h2>
             <p className="mb-3">
               You have the right to request access to personal information MACRA holds about you, to request
               correction of inaccurate information, and to request deletion of your information where there
@@ -113,7 +113,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <p>
               To exercise these rights, contact us at{" "}
-              <a href="mailto:dg@macra.mw" className="text-[#003087] underline hover:text-[#C8A84B]">
+              <a href="mailto:dg@macra.mw" className="text-[#E30613] underline hover:text-[#C8A84B]">
                 dg@macra.mw
               </a>
               {" "}or by post at the address below.
@@ -121,14 +121,14 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-[#003087] mb-3">Contact</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-3">Contact</h2>
             <address className="not-italic space-y-1">
-              <p className="font-medium text-[#003087]">Malawi Communications Regulatory Authority</p>
+              <p className="font-medium text-[#E30613]">Malawi Communications Regulatory Authority</p>
               <p>Snr Chief Kapeni Campus, 8 Kasungu Crescent</p>
               <p>Private Bag 261, Chichiri, Blantyre</p>
               <p>Postcode: 312225, Malawi</p>
               <p>
-                <a href="mailto:dg@macra.mw" className="text-[#003087] underline hover:text-[#C8A84B]">
+                <a href="mailto:dg@macra.mw" className="text-[#E30613] underline hover:text-[#C8A84B]">
                   dg@macra.mw
                 </a>
               </p>
@@ -136,7 +136,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-[#003087] mb-3">Changes to This Policy</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-3">Changes to This Policy</h2>
             <p>
               MACRA may update this privacy policy from time to time. Any changes will be published on
               this page. We encourage you to review this policy periodically.

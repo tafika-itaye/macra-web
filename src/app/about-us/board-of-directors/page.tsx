@@ -49,7 +49,7 @@ export default function BoardOfDirectorsPage() {
                 />
               </div>
               <div className="p-5">
-                <h3 className="text-lg font-semibold text-[#003087]">{member.name}</h3>
+                <h3 className="text-lg font-semibold text-[#E30613]">{member.name}</h3>
                 <p className="text-sm text-gray-500 mt-1">{member.title}</p>
               </div>
             </div>

@@ -37,7 +37,7 @@ export default function ActsPage() {
           {acts.map((act) => (
             <div key={act.title} className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
               <span className="text-xs font-medium text-[#C8A84B] uppercase tracking-wide">{act.category}</span>
-              <h2 className="text-base font-semibold text-[#003087] mt-2 mb-2">{act.title}</h2>
+              <h2 className="text-base font-semibold text-[#E30613] mt-2 mb-2">{act.title}</h2>
               <p className="text-sm text-gray-600 leading-relaxed">{act.description}</p>
             </div>
           ))}

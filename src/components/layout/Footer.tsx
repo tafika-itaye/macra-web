@@ -41,7 +41,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
   return (
     <>
-      <footer className="bg-[#003087] text-white mt-16">
+      <footer className="bg-[#E30613] text-white mt-16">
         <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
           {/* Column 1: Brand */}
@@ -64,7 +64,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={"MACRA on " + s.label}
-                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#C8A84B] hover:text-[#003087] text-white flex items-center justify-center transition-all"
+                  className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#C8A84B] hover:text-[#E30613] text-white flex items-center justify-center transition-all"
                 >
                   <SocialIcon label={s.label} />
                 </a>

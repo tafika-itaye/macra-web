@@ -27,16 +27,16 @@ export default function BroadcastingLicensingPage() {
       </div>
       <section className="max-w-7xl mx-auto px-4 py-10">
         <p className="text-sm text-gray-600 leading-relaxed max-w-3xl mb-8">All broadcasting operators in Malawi must hold a valid licence issued by MACRA. Licences are issued following a formal application process and assessment against broadcasting policy criteria including local content requirements and technical standards.</p>
-        <h2 className="text-lg font-bold text-[#003087] mb-4">Licence Categories</h2>
+        <h2 className="text-lg font-bold text-[#E30613] mb-4">Licence Categories</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           {licenceTypes.map((l) => (
             <div key={l.name} className="border border-gray-200 rounded-lg p-5">
-              <h3 className="text-sm font-semibold text-[#003087] mb-1">{l.name}</h3>
+              <h3 className="text-sm font-semibold text-[#E30613] mb-1">{l.name}</h3>
               <p className="text-sm text-gray-600">{l.description}</p>
             </div>
           ))}
         </div>
-        <div className="bg-[#003087] text-white rounded-lg p-6">
+        <div className="bg-[#E30613] text-white rounded-lg p-6">
           <h3 className="font-semibold mb-2">How to Apply</h3>
           <p className="text-sm text-blue-100 leading-relaxed">Download the broadcasting licence application form from the <a href="/media/application-forms" className="underline hover:text-[#C8A84B]">Application Forms</a> page. Submit the completed form with supporting documents and the prescribed fee to MACRA.</p>
         </div>

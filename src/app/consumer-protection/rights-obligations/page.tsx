@@ -68,13 +68,13 @@ export default function RightsObligationsPage() {
       </div>
       <section className="max-w-7xl mx-auto px-4 py-10 space-y-12">
         <div>
-          <h2 className="text-2xl font-bold text-[#003087] mb-6">
+          <h2 className="text-2xl font-bold text-[#E30613] mb-6">
             Consumer Rights
           </h2>
           <div className="space-y-6">
             {rights.map((item) => (
               <div key={item.title} className="border-l-4 border-[#C8A84B] pl-4">
-                <h3 className="font-semibold text-[#003087] mb-1">
+                <h3 className="font-semibold text-[#E30613] mb-1">
                   {item.title}
                 </h3>
                 <p className="text-gray-600">{item.body}</p>
@@ -84,13 +84,13 @@ export default function RightsObligationsPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-[#003087] mb-6">
+          <h2 className="text-2xl font-bold text-[#E30613] mb-6">
             Consumer Obligations
           </h2>
           <div className="space-y-6">
             {obligations.map((item) => (
               <div key={item.title} className="border-l-4 border-[#C8A84B] pl-4">
-                <h3 className="font-semibold text-[#003087] mb-1">
+                <h3 className="font-semibold text-[#E30613] mb-1">
                   {item.title}
                 </h3>
                 <p className="text-gray-600">{item.body}</p>

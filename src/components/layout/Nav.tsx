@@ -11,7 +11,7 @@ function MobileNavItem({ item, onClose }: { item: NavItem; onClose: () => void }
       <li>
         <Link
           href={item.href}
-          className="block px-4 py-3 text-sm font-medium text-[#003087] border-b border-gray-100 hover:bg-gray-50"
+          className="block px-4 py-3 text-sm font-medium text-[#E30613] border-b border-gray-100 hover:bg-gray-50"
           onClick={onClose}
         >
           {item.label}
@@ -22,7 +22,7 @@ function MobileNavItem({ item, onClose }: { item: NavItem; onClose: () => void }
   return (
     <li>
       <button
-        className="w-full flex justify-between items-center px-4 py-3 text-sm font-medium text-[#003087] border-b border-gray-100 hover:bg-gray-50"
+        className="w-full flex justify-between items-center px-4 py-3 text-sm font-medium text-[#E30613] border-b border-gray-100 hover:bg-gray-50"
         onClick={() => setOpen(!open)}
         aria-expanded={open}
       >
@@ -47,7 +47,7 @@ function MobileChildItem({ item, onClose }: { item: NavChild; onClose: () => voi
       <li>
         <Link
           href={item.href}
-          className="block px-6 py-2.5 text-sm text-gray-600 border-b border-gray-100 hover:text-[#003087] hover:bg-gray-100"
+          className="block px-6 py-2.5 text-sm text-gray-600 border-b border-gray-100 hover:text-[#E30613] hover:bg-gray-100"
           onClick={onClose}
           target={item.external ? "_blank" : undefined}
           rel={item.external ? "noopener noreferrer" : undefined}
@@ -60,7 +60,7 @@ function MobileChildItem({ item, onClose }: { item: NavChild; onClose: () => voi
   return (
     <li>
       <button
-        className="w-full flex justify-between items-center px-6 py-2.5 text-sm text-gray-600 border-b border-gray-100 hover:text-[#003087] hover:bg-gray-100"
+        className="w-full flex justify-between items-center px-6 py-2.5 text-sm text-gray-600 border-b border-gray-100 hover:text-[#E30613] hover:bg-gray-100"
         onClick={() => setOpen(!open)}
         aria-expanded={open}
       >
@@ -73,7 +73,7 @@ function MobileChildItem({ item, onClose }: { item: NavChild; onClose: () => voi
             <li key={child.href}>
               <Link
                 href={child.href}
-                className="block px-8 py-2 text-sm text-gray-600 border-b border-gray-100 hover:text-[#003087]"
+                className="block px-8 py-2 text-sm text-gray-600 border-b border-gray-100 hover:text-[#E30613]"
                 onClick={onClose}
                 target={child.external ? "_blank" : undefined}
                 rel={child.external ? "noopener noreferrer" : undefined}
@@ -97,7 +97,7 @@ function DropdownItem({ item }: { item: NavChild }) {
           href={item.href}
           target={item.external ? "_blank" : undefined}
           rel={item.external ? "noopener noreferrer" : undefined}
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#003087] whitespace-nowrap"
+          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#E30613] whitespace-nowrap"
         >
           {item.label}
         </Link>
@@ -108,7 +108,7 @@ function DropdownItem({ item }: { item: NavChild }) {
     <li className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#003087] whitespace-nowrap flex justify-between items-center gap-2"
+        className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#E30613] whitespace-nowrap flex justify-between items-center gap-2"
         aria-expanded={open}
         aria-haspopup="true"
       >
@@ -149,7 +149,7 @@ function NavDropdown({ item }: { item: NavItem }) {
     >
       <button
         onClick={() => setOpen(!open)}
-        className="px-3 py-4 text-sm font-medium text-[#003087] hover:text-[#C8A84B] flex items-center gap-1 focus:outline-none focus-visible:underline"
+        className="px-3 py-4 text-sm font-medium text-[#E30613] hover:text-[#C8A84B] flex items-center gap-1 focus:outline-none focus-visible:underline"
         aria-expanded={open}
         aria-haspopup="true"
       >
@@ -210,7 +210,7 @@ export default function Nav() {
               <li key={item.href} role="none">
                 <Link
                   href={item.href}
-                  className="px-3 py-4 text-sm font-medium text-[#003087] hover:text-[#C8A84B] block focus:outline-none focus-visible:underline"
+                  className="px-3 py-4 text-sm font-medium text-[#E30613] hover:text-[#C8A84B] block focus:outline-none focus-visible:underline"
                   role="menuitem"
                 >
                   {item.label}
@@ -223,7 +223,7 @@ export default function Nav() {
           <SearchBox />
         </div>
         <button
-          className="md:hidden py-4 px-1 text-[#003087] focus:outline-none focus-visible:underline"
+          className="md:hidden py-4 px-1 text-[#E30613] focus:outline-none focus-visible:underline"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-expanded={mobileOpen}
           aria-controls="mobile-menu"

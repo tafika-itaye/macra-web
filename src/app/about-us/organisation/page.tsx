@@ -34,7 +34,7 @@ export default function OrganisationPage() {
         <Breadcrumb items={[{ label: "About Us" }, { label: "Organisation" }]} />
         <div className="max-w-3xl mt-6 space-y-8">
           <section>
-            <h2 className="text-xl font-bold text-[#003087] mb-3">Our Mandate</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-3">Our Mandate</h2>
             <p className="text-gray-700 leading-relaxed">
               MACRA was established pursuant to Section 3 of the Communications Act 1998 of the
               Laws of Malawi to regulate the country&apos;s communications sector. MACRA now draws
@@ -44,13 +44,13 @@ export default function OrganisationPage() {
             </p>
           </section>
           <section>
-            <h2 className="text-xl font-bold text-[#003087] mb-3">Vision</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-3">Vision</h2>
             <p className="text-gray-700 leading-relaxed">
               Communications services for a digitally transformed nation.
             </p>
           </section>
           <section>
-            <h2 className="text-xl font-bold text-[#003087] mb-3">Core Values</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-3">Core Values</h2>
             <p className="text-gray-400 italic text-sm">
               Content to be populated from macra.mw/organisation/. See migration-notes.md.
             </p>

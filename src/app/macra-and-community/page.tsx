@@ -59,7 +59,7 @@ export default function MacraAndCommunityPage() {
               key={item.title}
               className="bg-white border border-gray-100 rounded-lg p-6 shadow-sm"
             >
-              <h3 className="text-lg font-semibold text-[#003087] mb-2">
+              <h3 className="text-lg font-semibold text-[#E30613] mb-2">
                 {item.title}
               </h3>
               <p className="text-gray-600 text-sm">{item.body}</p>

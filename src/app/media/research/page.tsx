@@ -35,7 +35,7 @@ export default function ResearchPage() {
                 <p className="text-xs text-gray-400 mt-1">{r.year}</p>
               </div>
               <div>
-                <h2 className="text-base font-semibold text-[#003087] mb-1">{r.title}</h2>
+                <h2 className="text-base font-semibold text-[#E30613] mb-1">{r.title}</h2>
                 <p className="text-sm text-gray-600 leading-relaxed">{r.description}</p>
               </div>
             </div>

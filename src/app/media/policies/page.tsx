@@ -35,7 +35,7 @@ export default function PoliciesPage() {
           {policies.map((p) => (
             <div key={p.title} className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
               <span className="text-xs text-gray-400">{p.year}</span>
-              <h2 className="text-base font-semibold text-[#003087] mt-1 mb-2">{p.title}</h2>
+              <h2 className="text-base font-semibold text-[#E30613] mt-1 mb-2">{p.title}</h2>
               <p className="text-sm text-gray-600 leading-relaxed">{p.description}</p>
             </div>
           ))}

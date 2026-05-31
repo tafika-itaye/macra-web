@@ -35,7 +35,7 @@ export default function ProjectsPage() {
           {projects.map((p) => (
             <div key={p.title} className="border border-gray-200 rounded-lg p-6">
               <div className="flex flex-wrap items-center gap-3 mb-2">
-                <h2 className="text-base font-semibold text-[#003087]">{p.title}</h2>
+                <h2 className="text-base font-semibold text-[#E30613]">{p.title}</h2>
                 <span className={["text-xs font-medium px-2 py-0.5 rounded", p.status === "Ongoing" ? "bg-blue-50 text-blue-700" : "bg-green-50 text-green-700"].join(" ")}>{p.status}</span>
               </div>
               <p className="text-xs text-gray-400 mb-2">{p.year}</p>

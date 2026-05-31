@@ -27,19 +27,19 @@ export default function ServiceCharterPage() {
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "MACRA and Community", href: "/macra-and-community" }, { label: "Service Charter" }]} />
       </div>
       <section className="max-w-4xl mx-auto px-4 py-10">
-        <h2 className="text-xl font-bold text-[#003087] mb-4">Our Service Commitments</h2>
+        <h2 className="text-xl font-bold text-[#E30613] mb-4">Our Service Commitments</h2>
         <p className="text-sm text-gray-600 leading-relaxed mb-8">MACRA is committed to delivering high-quality regulatory services to all stakeholders. This Service Charter sets out the standards of service you can expect from MACRA and what to do if we fall short of these standards.</p>
         <div className="space-y-4">
           {commitments.map((c) => (
             <div key={c.service} className="border border-gray-200 rounded-lg p-5">
-              <h3 className="text-sm font-semibold text-[#003087] mb-1">{c.service}</h3>
+              <h3 className="text-sm font-semibold text-[#E30613] mb-1">{c.service}</h3>
               <p className="text-sm text-gray-600">{c.standard}</p>
             </div>
           ))}
         </div>
         <div className="mt-8 bg-gray-50 border border-gray-200 rounded-lg p-5">
-          <h3 className="text-sm font-semibold text-[#003087] mb-2">If We Fall Short</h3>
-          <p className="text-sm text-gray-600 leading-relaxed">If MACRA does not meet the standards in this charter, please contact us at <a href="mailto:dg@macra.mw" className="text-[#003087] underline hover:text-[#C8A84B]">dg@macra.mw</a> or call <a href="tel:+2651810497" className="text-[#003087] underline hover:text-[#C8A84B]">(+265) (0) 1 810 497</a>.</p>
+          <h3 className="text-sm font-semibold text-[#E30613] mb-2">If We Fall Short</h3>
+          <p className="text-sm text-gray-600 leading-relaxed">If MACRA does not meet the standards in this charter, please contact us at <a href="mailto:dg@macra.mw" className="text-[#E30613] underline hover:text-[#C8A84B]">dg@macra.mw</a> or call <a href="tel:+2651810497" className="text-[#E30613] underline hover:text-[#C8A84B]">(+265) (0) 1 810 497</a>.</p>
         </div>
       </section>
     </main>

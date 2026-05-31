@@ -34,7 +34,7 @@ export default function USFConsultationsPage() {
           {consultations.map((c) => (
             <div key={c.title} className="border border-gray-200 rounded-lg p-6">
               <div className="flex flex-wrap items-center gap-3 mb-2">
-                <h2 className="text-base font-semibold text-[#003087]">{c.title}</h2>
+                <h2 className="text-base font-semibold text-[#E30613]">{c.title}</h2>
                 <span className={["text-xs font-medium px-2 py-0.5 rounded", c.status === "Open" ? "bg-green-50 text-green-700" : "bg-gray-100 text-gray-500"].join(" ")}>{c.status}</span>
               </div>
               <p className="text-xs text-gray-400 mb-2">Deadline: {c.deadline}</p>

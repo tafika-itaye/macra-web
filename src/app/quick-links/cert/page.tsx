@@ -22,10 +22,10 @@ export default function CERTPage() {
       <section className="max-w-7xl mx-auto px-4 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div>
-            <h2 className="text-xl font-bold text-[#003087] mb-4">Malawi Computer Emergency Response Team</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-4">Malawi Computer Emergency Response Team</h2>
             <p className="text-sm text-gray-600 leading-relaxed mb-4">The Malawi CERT is the national computer emergency response team established by MACRA to coordinate responses to cybersecurity incidents affecting Malawi. It serves as the national point of contact for cybersecurity incident reporting and response.</p>
             <p className="text-sm text-gray-600 leading-relaxed mb-4">Malawi CERT works with government agencies, the private sector, and international CERT organisations to protect Malawi critical information infrastructure and promote cybersecurity awareness.</p>
-            <h3 className="text-base font-semibold text-[#003087] mt-4 mb-3">Services</h3>
+            <h3 className="text-base font-semibold text-[#E30613] mt-4 mb-3">Services</h3>
             <ul className="text-sm text-gray-600 space-y-2 mb-6">
               <li className="flex gap-2"><span className="text-[#C8A84B] font-bold">-</span>Cybersecurity incident response coordination</li>
               <li className="flex gap-2"><span className="text-[#C8A84B] font-bold">-</span>Vulnerability alerts and security advisories</li>
@@ -33,7 +33,7 @@ export default function CERTPage() {
               <li className="flex gap-2"><span className="text-[#C8A84B] font-bold">-</span>Technical assistance to organisations under cyber attack</li>
               <li className="flex gap-2"><span className="text-[#C8A84B] font-bold">-</span>International CERT coordination and information sharing</li>
             </ul>
-            <div className="bg-[#003087] text-white rounded-lg p-5">
+            <div className="bg-[#E30613] text-white rounded-lg p-5">
               <h3 className="font-semibold mb-2">Report an Incident</h3>
               <p className="text-sm text-blue-100">To report a cybersecurity incident contact Malawi CERT at <a href="mailto:dg@macra.mw" className="underline hover:text-[#C8A84B]">dg@macra.mw</a> or call <a href="tel:+2651810497" className="underline hover:text-[#C8A84B]">(+265) (0) 1 810 497</a>.</p>
             </div>

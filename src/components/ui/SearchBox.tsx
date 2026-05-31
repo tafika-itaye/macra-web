@@ -88,7 +88,7 @@ export default function SearchBox({ onClose }: { onClose?: () => void }) {
   return (
     <div ref={containerRef} className="relative">
       <div className="flex items-center bg-gray-100 rounded-full px-3 py-1.5 gap-2">
-        <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#003087" strokeWidth="2.5" strokeLinecap="round">
+        <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#E30613" strokeWidth="2.5" strokeLinecap="round">
           <circle cx="11" cy="11" r="8" />
           <line x1="21" y1="21" x2="16.65" y2="16.65" />
         </svg>
@@ -103,13 +103,13 @@ export default function SearchBox({ onClose }: { onClose?: () => void }) {
           aria-autocomplete="list"
           aria-expanded={open}
           aria-controls="search-results"
-          className="bg-transparent text-sm text-[#003087] placeholder-gray-400 outline-none w-36 focus:w-48 transition-all duration-200"
+          className="bg-transparent text-sm text-[#E30613] placeholder-gray-400 outline-none w-36 focus:w-48 transition-all duration-200"
         />
         {query && (
           <button
             onClick={() => { setQuery(""); setOpen(false); inputRef.current?.focus(); }}
             aria-label="Clear search"
-            className="text-gray-400 hover:text-[#003087] text-xs leading-none"
+            className="text-gray-400 hover:text-[#E30613] text-xs leading-none"
           >
             x
           </button>
@@ -138,7 +138,7 @@ export default function SearchBox({ onClose }: { onClose?: () => void }) {
               <p className="text-xs text-[#C8A84B] font-semibold uppercase tracking-wide mb-0.5">
                 {entry.section}
               </p>
-              <p className="text-sm font-medium text-[#003087]">{entry.title}</p>
+              <p className="text-sm font-medium text-[#E30613]">{entry.title}</p>
               <p className="text-xs text-gray-500 mt-0.5 line-clamp-1">{entry.description}</p>
             </li>
           ))}

@@ -24,7 +24,7 @@ export default function NewsCard({ item }: { item: NewsItem }) {
         <p className="text-xs text-gray-400 mb-1">
           {date} | {item.category.join(", ")}
         </p>
-        <h3 className="font-semibold text-[#003087] mb-2 leading-snug">
+        <h3 className="font-semibold text-[#E30613] mb-2 leading-snug">
           <Link href={`/media/news/${item.slug}`} className="hover:underline">
             {item.title}
           </Link>
@@ -32,7 +32,7 @@ export default function NewsCard({ item }: { item: NewsItem }) {
         <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">{item.excerpt}</p>
         <Link
           href={`/media/news/${item.slug}`}
-          className="mt-4 inline-block text-sm text-[#003087] font-medium hover:underline"
+          className="mt-4 inline-block text-sm text-[#E30613] font-medium hover:underline"
         >
           Read more
         </Link>

@@ -28,11 +28,11 @@ export default function TelecomsQoSPage() {
       </div>
       <section className="max-w-7xl mx-auto px-4 py-10">
         <p className="text-sm text-gray-600 leading-relaxed max-w-3xl mb-8">MACRA sets and enforces minimum quality of service standards for telecommunications operators in Malawi. Operators are required to meet these standards and submit regular QoS reports to MACRA. MACRA conducts independent QoS measurements to verify compliance.</p>
-        <h2 className="text-lg font-bold text-[#003087] mb-4">Key QoS Parameters</h2>
+        <h2 className="text-lg font-bold text-[#E30613] mb-4">Key QoS Parameters</h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="bg-[#003087] text-white">
+              <tr className="bg-[#E30613] text-white">
                 <th className="text-left px-4 py-3 font-medium">Parameter</th>
                 <th className="text-left px-4 py-3 font-medium">Target</th>
                 <th className="text-left px-4 py-3 font-medium">Service</th>
@@ -49,7 +49,7 @@ export default function TelecomsQoSPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-gray-500 mt-4">QoS monitoring reports are published quarterly. View reports on the <a href="/media/qos-reports" className="text-[#003087] underline hover:text-[#C8A84B]">QoS Reports</a> page.</p>
+        <p className="text-sm text-gray-500 mt-4">QoS monitoring reports are published quarterly. View reports on the <a href="/media/qos-reports" className="text-[#E30613] underline hover:text-[#C8A84B]">QoS Reports</a> page.</p>
       </section>
     </main>
   );

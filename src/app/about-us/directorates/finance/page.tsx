@@ -18,10 +18,10 @@ export default function FinancePage() {
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "About Us", href: "/about-us/organisation" }, { label: "Directorates", href: "#" }, { label: "Finance" }]} />
       </div>
       <section className="max-w-4xl mx-auto px-4 py-10">
-        <h2 className="text-xl font-bold text-[#003087] mb-4">Directorate of Finance</h2>
+        <h2 className="text-xl font-bold text-[#E30613] mb-4">Directorate of Finance</h2>
         <p className="text-sm text-gray-600 leading-relaxed mb-4">The Directorate of Finance is responsible for financial management, planning, and reporting at MACRA. It ensures the prudent use of public resources and maintains the financial integrity of the Authority.</p>
         <p className="text-sm text-gray-600 leading-relaxed mb-6">The directorate prepares annual budgets, manages accounts, coordinates external audits, and ensures compliance with public finance management requirements.</p>
-        <h3 className="text-base font-semibold text-[#003087] mb-3">Key Functions</h3>
+        <h3 className="text-base font-semibold text-[#E30613] mb-3">Key Functions</h3>
         <ul className="text-sm text-gray-600 space-y-2">
           <li className="flex gap-2"><span className="text-[#C8A84B] font-bold">-</span>Budget preparation and financial planning</li>
           <li className="flex gap-2"><span className="text-[#C8A84B] font-bold">-</span>Financial accounting and reporting</li>

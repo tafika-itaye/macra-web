@@ -18,13 +18,13 @@ export default function BroadcastingFrequenciesPage() {
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services/broadcasting" }, { label: "Broadcasting", href: "/services/broadcasting" }, { label: "Broadcasting Frequencies" }]} />
       </div>
       <section className="max-w-4xl mx-auto px-4 py-10">
-        <h2 className="text-xl font-bold text-[#003087] mb-4">Broadcasting Frequencies</h2>
+        <h2 className="text-xl font-bold text-[#E30613] mb-4">Broadcasting Frequencies</h2>
         <p className="text-sm text-gray-600 leading-relaxed mb-4">MACRA manages the allocation and assignment of frequencies for broadcasting services in Malawi. Frequency assignments are made as part of the broadcasting licence and in accordance with the national frequency plan.</p>
         <p className="text-sm text-gray-600 leading-relaxed mb-6">Malawi uses the following frequency bands for broadcasting services:</p>
         <div className="overflow-x-auto mb-6">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="bg-[#003087] text-white">
+              <tr className="bg-[#E30613] text-white">
                 <th className="text-left px-4 py-3 font-medium">Band</th>
                 <th className="text-left px-4 py-3 font-medium">Frequency Range</th>
                 <th className="text-left px-4 py-3 font-medium">Service</th>
@@ -37,7 +37,7 @@ export default function BroadcastingFrequenciesPage() {
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-gray-600 leading-relaxed">Frequency assignments are included in each broadcasting licence. Applications for new broadcasting licences should be submitted to MACRA using the forms on the <a href="/media/application-forms" className="text-[#003087] underline hover:text-[#C8A84B]">Application Forms</a> page.</p>
+        <p className="text-sm text-gray-600 leading-relaxed">Frequency assignments are included in each broadcasting licence. Applications for new broadcasting licences should be submitted to MACRA using the forms on the <a href="/media/application-forms" className="text-[#E30613] underline hover:text-[#C8A84B]">Application Forms</a> page.</p>
       </section>
     </main>
   );

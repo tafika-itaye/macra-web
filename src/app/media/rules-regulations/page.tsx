@@ -34,7 +34,7 @@ export default function RulesRegulationsPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm border-collapse">
             <thead>
-              <tr className="bg-[#003087] text-white">
+              <tr className="bg-[#E30613] text-white">
                 <th className="text-left px-4 py-3 font-medium">Title</th>
                 <th className="text-left px-4 py-3 font-medium">Category</th>
               </tr>

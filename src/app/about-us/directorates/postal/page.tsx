@@ -22,10 +22,10 @@ export default function PostalDirectoratePage() {
       <section className="max-w-7xl mx-auto px-4 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div>
-            <h2 className="text-xl font-bold text-[#003087] mb-4">Directorate of Postal Services</h2>
+            <h2 className="text-xl font-bold text-[#E30613] mb-4">Directorate of Postal Services</h2>
             <p className="text-sm text-gray-600 leading-relaxed mb-4">The Directorate of Postal Services regulates and monitors postal and courier services in Malawi. It licenses postal and courier operators and monitors their compliance with quality of service standards.</p>
             <p className="text-sm text-gray-600 leading-relaxed mb-4">The directorate also manages the National Addressing Project and the implementation of the Malawi postcode system to improve mail delivery accuracy across the country.</p>
-            <h3 className="text-base font-semibold text-[#003087] mt-6 mb-3">Key Functions</h3>
+            <h3 className="text-base font-semibold text-[#E30613] mt-6 mb-3">Key Functions</h3>
             <ul className="text-sm text-gray-600 space-y-2">
               <li className="flex gap-2"><span className="text-[#C8A84B] font-bold">-</span>Licensing of postal and courier service operators</li>
               <li className="flex gap-2"><span className="text-[#C8A84B] font-bold">-</span>Quality of service monitoring for postal services</li>

@@ -17,7 +17,7 @@ export default function HomePage() {
       <Hero />
       <div className="max-w-7xl mx-auto px-4 py-12">
         <section aria-labelledby="news-heading" className="mb-16">
-          <h2 id="news-heading" className="text-2xl font-bold text-[#003087] mb-6">
+          <h2 id="news-heading" className="text-2xl font-bold text-[#E30613] mb-6">
             Latest News and Events
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -27,7 +27,7 @@ export default function HomePage() {
           </div>
         </section>
         <section aria-labelledby="downloads-heading">
-          <h2 id="downloads-heading" className="text-2xl font-bold text-[#003087] mb-6">
+          <h2 id="downloads-heading" className="text-2xl font-bold text-[#E30613] mb-6">
             Press Releases and Notices
           </h2>
           <DownloadTable downloads={featuredDownloads} />

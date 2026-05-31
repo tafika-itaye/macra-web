@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Topbar() {
   return (
-    <div className="bg-[#003087] text-white text-sm py-2">
+    <div className="bg-[#E30613] text-white text-sm py-2">
       <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
         <div className="flex gap-4 items-center flex-wrap">
           <a href={contactInfo.phoneTel} className="hover:text-[#C8A84B]">

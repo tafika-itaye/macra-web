@@ -26,7 +26,7 @@ export default function Hero() {
 
   return (
     <section
-      className="bg-[#003087] text-white py-20 px-4"
+      className="bg-[#E30613] text-white py-20 px-4"
       aria-label="Homepage hero"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
@@ -45,13 +45,13 @@ export default function Hero() {
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/about-us/organisation"
-                className="inline-block bg-[#C8A84B] text-[#003087] font-semibold px-6 py-3 rounded hover:brightness-110 transition-all"
+                className="inline-block bg-[#C8A84B] text-[#E30613] font-semibold px-6 py-3 rounded hover:brightness-110 transition-all"
               >
                 About MACRA
               </Link>
               <Link
                 href="/consumer-protection/consumer-complaints"
-                className="inline-block bg-white text-[#003087] font-semibold px-6 py-3 rounded hover:bg-[#e8edf5] transition-all"
+                className="inline-block bg-white text-[#E30613] font-semibold px-6 py-3 rounded hover:bg-[#e8edf5] transition-all"
               >
                 Submit a Complaint
               </Link>
