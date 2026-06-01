@@ -76,7 +76,7 @@ export default function Hero() {
                 {item.title}
               </h2>
               <p className="text-white/80 text-sm leading-relaxed line-clamp-3">
-                {item.excerpt}
+                {item.summary}
               </p>
             </div>
             <div className="flex items-center justify-between mt-6">

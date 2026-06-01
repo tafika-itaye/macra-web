@@ -74,7 +74,7 @@ export default function RootLayout({
         <Footer />
         <CookieBanner />
       {/* MacraDocIntel WhatsApp assistant */}
-      
+      <a
         href="https://wa.me/265995753326?text=Hello%2C%20I%20have%20a%20question%20about%20MACRA%20regulations."
         target="_blank"
         rel="noopener noreferrer"
