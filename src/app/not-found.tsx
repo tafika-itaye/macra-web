@@ -127,7 +127,7 @@ export default function NotFound() {
               {results.map((r) => (
                 <li key={r.path} className="border-b border-gray-100 last:border-0">
                   <Link
-                    href={bp(r.path)}
+                    href={r.path}
                     className="flex flex-col px-5 py-3 hover:bg-red-50 transition-colors"
                   >
                     <span className="text-[#E30613] font-semibold text-sm">{r.title}</span>
@@ -152,7 +152,7 @@ export default function NotFound() {
           {quickLinks.map((section) => (
             <div key={section.label} className="bg-white rounded-xl p-4 shadow-sm">
               <Link
-                href={bp(section.href)}
+                href={section.href}
                 className="block text-sm font-bold text-[#333333] hover:text-[#E30613] transition-colors mb-3"
               >
                 {section.label}
@@ -161,7 +161,7 @@ export default function NotFound() {
                 {section.links.map((link) => (
                   <li key={link.href}>
                     <Link
-                      href={bp(link.href)}
+                      href={link.href}
                       className="text-xs text-gray-500 hover:text-[#E30613] transition-colors leading-snug block"
                     >
                       {link.label}
@@ -175,7 +175,7 @@ export default function NotFound() {
 
         <div className="mt-10 flex items-center gap-4">
           <Link
-            href={bp("/")}
+            href="/"
             className="inline-flex items-center gap-2 bg-[#E30613] text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-[#B8000F] transition-colors"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -185,7 +185,7 @@ export default function NotFound() {
             Back to home
           </Link>
           <Link
-            href={bp("/contact")}
+            href="/contact"
             className="text-sm text-gray-500 hover:text-[#E30613] transition-colors"
           >
             Contact us

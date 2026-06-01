@@ -13,7 +13,7 @@ export default function Topbar() {
           <a href={`mailto:${contactInfo.emailDG}`} className="hover:text-[#C8A84B]">
             {contactInfo.emailDG}
           </a>
-          <Link href={bp("/media/application-forms")} className="hover:text-[#C8A84B]">
+          <Link href="/media/application-forms" className="hover:text-[#C8A84B]">
             Downloads
           </Link>
         </div>

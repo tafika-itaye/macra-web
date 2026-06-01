@@ -26,13 +26,13 @@ export default function NewsCard({ item }: { item: NewsItem }) {
           {date} | {item.categories.join(", ")}
         </p>
         <h3 className="font-semibold text-[#E30613] mb-2 leading-snug">
-          <Link href={bp(`/media/news/${item.slug}`)} className="hover:underline">
+          <Link href={`/media/news/${item.slug}`} className="hover:underline">
             {item.title}
           </Link>
         </h3>
         <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">{item.summary}</p>
         <Link
-          href={bp(`/media/news/${item.slug}`)}
+          href={`/media/news/${item.slug}`}
           className="mt-4 inline-block text-sm text-[#E30613] font-medium hover:underline"
         >
           Read more

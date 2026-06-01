@@ -4,6 +4,13 @@ import Link from "next/link";
 import { newsItems } from "@/data/news";
 import { bp } from "@/lib/basePath";
 
+const heroImages = [
+  "/images/hero-telecom.jpg",
+  "/images/hero-broadcasting.jpg",
+  "/images/hero-postal.jpg",
+  "/images/hero-banner.jpg",
+];
+
 export default function Hero() {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -24,18 +31,24 @@ export default function Hero() {
   }, [paused, next]);
 
   const item = newsItems[active];
+  const bgImage = heroImages[active % heroImages.length];
 
   return (
     <section
-      className="bg-[#E30613] text-white py-20 px-4"
+      className="relative text-white overflow-hidden"
+      style={{ minHeight: "520px" }}
       aria-label="Homepage hero"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="max-w-7xl mx-auto">
+      <div
+        className="absolute inset-0 bg-cover bg-center transition-all duration-700"
+        style={{ backgroundImage: `url(${bp(bgImage)})` }}
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-[#E30613]/80" aria-hidden="true" />
+      <div className="relative max-w-7xl mx-auto px-4 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-          {/* Left column: static vision statement */}
           <div>
             <p className="text-[#C8A84B] font-medium mb-3 text-sm uppercase tracking-widest">
               Vision
@@ -45,22 +58,20 @@ export default function Hero() {
             </h1>
             <div className="flex flex-wrap gap-3">
               <Link
-                href={bp("/about-us/organisation")}
+                href="/about-us/organisation"
                 className="inline-block bg-[#C8A84B] text-[#E30613] font-semibold px-6 py-3 rounded hover:brightness-110 transition-all"
               >
                 About MACRA
               </Link>
               <Link
-                href={bp("/consumer-protection/consumer-complaints")}
+                href="/consumer-protection/consumer-complaints"
                 className="inline-block bg-white text-[#E30613] font-semibold px-6 py-3 rounded hover:bg-[#e8edf5] transition-all"
               >
                 Submit a Complaint
               </Link>
             </div>
           </div>
-
-          {/* Right column: rotating news */}
-          <div className="bg-white/10 rounded-xl p-6 min-h-[220px] flex flex-col justify-between">
+          <div className="bg-white/10 rounded-xl p-6 min-h-[220px] flex flex-col justify-between backdrop-blur-sm">
             <div>
               <p className="text-[#C8A84B] text-xs font-semibold uppercase tracking-widest mb-3">
                 Latest News
@@ -80,7 +91,6 @@ export default function Hero() {
               </p>
             </div>
             <div className="flex items-center justify-between mt-6">
-              {/* Dot indicators */}
               <div className="flex gap-2" role="tablist" aria-label="News slides">
                 {newsItems.map((_, i) => (
                   <button
@@ -93,29 +103,26 @@ export default function Hero() {
                   />
                 ))}
               </div>
-              {/* Prev / next arrows */}
               <div className="flex gap-2">
                 <button
                   onClick={prev}
                   aria-label="Previous news item"
                   className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 transition-all flex items-center justify-center text-white text-sm"
                 >
-                  &larr;
+                  &#8592;
                 </button>
                 <button
                   onClick={next}
                   aria-label="Next news item"
                   className="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 transition-all flex items-center justify-center text-white text-sm"
                 >
-                  &rarr;
+                  &#8594;
                 </button>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
   );
 }
-

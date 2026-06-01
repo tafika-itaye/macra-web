@@ -40,7 +40,7 @@ export default function CookieBanner() {
         <p className="text-sm text-blue-100 max-w-2xl">
           This website uses functional cookies to ensure it works correctly. We do not use advertising
           or tracking cookies. See our{" "}
-          <Link href={bp("/privacy-policy")} className="underline hover:text-[#C8A84B]">
+          <Link href="/privacy-policy" className="underline hover:text-[#C8A84B]">
             Privacy Policy
           </Link>
           {" "}for details.
