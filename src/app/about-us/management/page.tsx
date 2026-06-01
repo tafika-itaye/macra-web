@@ -28,13 +28,13 @@ export default function ManagementPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {managementMembers.map((member) => (
             <div key={member.name} className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden text-center">
-              <div className="relative w-full h-64">
+              <div className="relative w-full h-80">
                 <Image
                   src={bp(member.image)}
                   alt={member.name}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                   loading="lazy"
                 />
               </div>

@@ -11,9 +11,9 @@ export default function NewsCard({ item }: { item: NewsItem }) {
   return (
     <article className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
       <div className="bg-gray-100 h-44 flex items-center justify-center text-gray-400 text-sm">
-        {item.imageFile ? (
+        {item.image ? (
           <img
-            src={`/images/news/${item.imageFile}`}
+            src={bp(item.image)}
             alt={item.title}
             className="w-full h-full object-cover"
           />
@@ -23,14 +23,14 @@ export default function NewsCard({ item }: { item: NewsItem }) {
       </div>
       <div className="p-5">
         <p className="text-xs text-gray-400 mb-1">
-          {date} | {item.category.join(", ")}
+          {date} | {item.categories.join(", ")}
         </p>
         <h3 className="font-semibold text-[#E30613] mb-2 leading-snug">
           <Link href={bp(`/media/news/${item.slug}`)} className="hover:underline">
             {item.title}
           </Link>
         </h3>
-        <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">{item.excerpt}</p>
+        <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">{item.summary}</p>
         <Link
           href={bp(`/media/news/${item.slug}`)}
           className="mt-4 inline-block text-sm text-[#E30613] font-medium hover:underline"
